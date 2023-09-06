@@ -43,6 +43,6 @@ Connect with Git, connect with repo, make first commits!<br/>
 <p1></p1><br/>
 
 <h3>Industry Mentor:</h3>
-<p1>Lihn Ly</p1><br/><br/>
+<p1>Linh Ly</p1><br/><br/>
 
 <h1>💚🌿🪴Thanks for checking out Plant Planner! 🪴🌿💚</h1>
