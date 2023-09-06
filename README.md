@@ -29,7 +29,16 @@ Backend Members:<br/>
 Determine Tech Stack:<br/><br/>
 Tasks:<br/>
 Download IDEs for tech stack<br/>
-Connect with Git, connect with repo, make first commits!<br/>
+Connect with Git, connect with repo, make first commits!<br/><br/>
+Homework:<br/>
+Frontend: <br/>
+Create a Figma Page and have draft wireframe complete by 9/20ish<br/>
+Complete Tech Stack Intro(LINK TBD)<br/>
+Backend:<br/>
+Complete Tech Stack Intro(LINK TBD)<br/>
+Complete API Tutorial(LINK TBD)<br/>
+Look over Perenual Documentation<br/>
+
 </p1>
 
 <h1>Team Plant Planner 🪴</h1>
