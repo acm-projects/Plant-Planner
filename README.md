@@ -37,9 +37,10 @@ Complete Tech Stack Intro(LINK TBD)<br/>
 Backend:<br/>
 Complete Tech Stack Intro(LINK TBD)<br/>
 Complete API Tutorial(LINK TBD)<br/>
-Look over Perenual Documentation<br/>
+Look over Perenual Documentation</p1><br/><br/>
 
-</p1>
+<h3>Week 2 🌿</h3>
+<p1>Look over Figma, get input from industry mentor</p1>
 
 <h1>Team Plant Planner 🪴</h1>
 <h3>Project Manager</h3>
