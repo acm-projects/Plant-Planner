@@ -33,9 +33,26 @@
 
 <table>
   <tr>
-    <th>Week 1</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Week</th>
+    <th>Topic</th>
+    <th>
+      Tasks
+    </th>
+  </tr>
+  <tr>
+    <td>Week 1</td>
+    <td>Meeting the team!! <br/> Setting up Git and develop environment</td>
+    <td>
+       <ul>
+        <li>Git and IDEs should be set up, teach basic git commands</li>
+        <li>Split team into Frontend/Backend</li>
+        <li>Get a Figma set up</li>
+        <li>Frontend: Start working on Figma and have draft done by next meeting</li>
+        <li>Backend: Start setting up the database and connecting with API by next meeting</li>
+        <li>Homework: Tech Stack tutorials</li>
+        <li>Be nice to my participants (Linh) </li>
+      </ul>
+    </td>
   </tr>
   <tr>
     <td>Week 2/3</td>
@@ -48,9 +65,9 @@
     <td>Mexico</td>
   </tr>
    <tr>
-    <th>Week 6/7</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <td>Week 4/5</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
   </tr>
   <tr>
     <td>Week 8/9</td>
@@ -63,9 +80,9 @@
     <td>Mexico</td>
   </tr>
    <tr>
-    <th>Week 11</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <td>Week 4/5</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
   </tr>
 </table>
 
