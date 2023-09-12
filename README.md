@@ -50,14 +50,24 @@
         <li>Frontend: Start working on Figma and have draft done by next meeting</li>
         <li>Backend: Start setting up the database and connecting with API by next meeting</li>
         <li>Homework: Tech Stack tutorials</li>
-        <li>Be nice to my participants (Linh) </li>
+        <li><b>Linh: Be nice to my participants  </b></li>
       </ul>
     </td>
   </tr>
   <tr>
     <td>Week 2/3</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>Prototyping/Early Development</td>
+    <td>
+      <ul>
+        <li><i>Deliverable: Figma draft should be completed</i></li>
+        <li>Frontend: Begin coding pages, starting with login/registration</li>
+        <li>Backend: Begin learning how to store login information and authentication</li>
+        <li>Backend: </li>
+        <li>Backend: Start setting up the database and connecting with API by next meeting</li>
+        <li>Homework: Tech Stack tutorials</li>
+        <li><b>Linh: Be nice to my participants  </b></li>
+      </ul>  
+    </td>
   </tr>
   <tr>
     <td>Week 4/5</td>
