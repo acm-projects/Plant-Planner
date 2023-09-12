@@ -2,16 +2,20 @@
 
 Have too many plants and a busy schedule, or is that just me? Plant owners know the struggle of balancing a buzzing lifestyle and still taking care of the plants they love, especially when they all have such different needs! Plant Planner takes away the stress by automatically creating watering and fertilizing schedules based off of a plant’s need. Simply type in the name of your plant and Plant Planner will automatically add its watering schedule to your Google Calendar.
 
-<h3>MVP 🌿</h3>
-<p1>User Account with Login Authentication<br/>
-Page which displays all your plants and their general information<br/>
-- such as image, plant, nickname, water preferences, light preferences, etc (Discuss what should be here)<br/>
-Ability to add and delete plants from your page<br/>
-Connects with Perenual or other API to pull information about the plants<br/>
-Creates a watering schedule based on information pulled from the API and implements with Google Calendar</p1><br/><br/>
+<h2>MVP 🌿</h2>
+<ul>
+  <li>User Account with Login Authentication</li>
+  <li>Page which displays all your plants and their general information</li>
+ <ul>
+  <li>such as image, plant, nickname, water preferences, light preferences, etc (Discuss what should be here)</li>
+ </ul>
+  <li>Ability to add and delete plants from your page</li>
+  <li>Connects with Perenual or other API to pull information about the plants</li>
+  <li>Creates a watering schedule based on information pulled from the API and implements with Google Calendar</li>
+</ul>
 
 
-<h3>Stretch Goals 🌿</h3>
+<h2>Stretch Goals 🌿</h2>
 <p1>Add fertilization Schedule<br/>
 In case the user doesn't know the plant name, have a quiz that will allow the app to guess its watering preferences<br/>
  - example: hard, stiff, and bulbous leaves -> is a succulent -> requires water once every two weeks and direct sunlight<br/>
@@ -20,27 +24,24 @@ Sunlight sensor which would sense how bright an area is (bright direct/bright in
 
 
 <h2>Milestones</h2>
-<h3>Week 1 🌿</h3>
 
-<p1> Meet the team!!<br/>
-Determine Frontend/Backend:<br/>
-Frontend Members:<br/>
-Backend Members:<br/>
-Determine Tech Stack:<br/><br/>
-Tasks:<br/>
-Download IDEs for tech stack<br/>
-Connect with Git, connect with repo, make first commits!<br/><br/>
-Homework:<br/>
-Frontend: <br/>
-Create a Figma Page and have draft wireframe complete by 9/20ish<br/>
-Complete Tech Stack Intro(LINK TBD)<br/>
-Backend:<br/>
-Complete Tech Stack Intro(LINK TBD)<br/>
-Complete API Tutorial(LINK TBD)<br/>
-Look over Perenual Documentation</p1><br/><br/>
-
-<h3>Week 2 🌿</h3>
-<p1>Look over Figma, get input from industry mentor</p1>
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
 
 <h1>Team Plant Planner 🪴</h1>
 <h3>Project Manager</h3>
