@@ -1,6 +1,6 @@
-<h1>Plant Planner 🪴</h1>
+<h1 align="center">Plant Planner 🪴</h1>
 
-Have too many plants and a busy schedule, or is that just me? Plant owners know the struggle of balancing a buzzing lifestyle and still taking care of the plants they love, especially when they all have such different needs! Plant Planner takes away the stress by automatically creating watering and fertilizing schedules based off of a plant’s need. Simply type in the name of your plant and Plant Planner will automatically add its watering schedule to your Google Calendar.
+<p align="center"> Have too many plants and a busy schedule, or is that just me? Plant owners know the struggle of balancing a buzzing lifestyle and still taking care of the plants they love, especially when they all have such different needs! Plant Planner takes away the stress by automatically creating watering and fertilizing schedules based off of a plant’s need. Simply type in the name of your plant and Plant Planner will automatically add its watering schedule to your Google Calendar. </p>
 
 <h2>MVP 🌿</h2>
 <ul>
@@ -16,30 +16,56 @@ Have too many plants and a busy schedule, or is that just me? Plant owners know 
 
 
 <h2>Stretch Goals 🌿</h2>
-<p1>Add fertilization Schedule<br/>
-In case the user doesn't know the plant name, have a quiz that will allow the app to guess its watering preferences<br/>
- - example: hard, stiff, and bulbous leaves -> is a succulent -> requires water once every two weeks and direct sunlight<br/>
-Add 'growth tracker' which would notify the user to take a picture every month in order to track the plants growth<br/>
-Sunlight sensor which would sense how bright an area is (bright direct/bright indirect/medium/dark)</p1><br/><br/>
+<ul>
+  <li>Add fertilization Schedule</li>
+  <li>In case the user doesn't know the plant name, have a quiz that will allow the app to guess its watering preferences</li>
+ <ul>
+  <li> example: hard, stiff, and bulbous leaves -> is a succulent -> requires water once every two weeks and direct sunlight</li>
+ </ul>
+  <li>Add 'growth tracker' which would notify the user to take a picture every month in order to track the plants growth</li>
+  <li>Sunlight sensor which would sense how bright an area is (bright direct/bright indirect/medium/dark)</li>
+  <li>Add social aspect</li>
+  <li>Adjust based on local weather conditions</li>
+</ul>
 
 
-<h2>Milestones</h2>
+<h2>Milestones 🌿</h2>
 
 <table>
   <tr>
-    <th>Company</th>
+    <th>Week 1</th>
     <th>Contact</th>
     <th>Country</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td>Week 2/3</td>
     <td>Maria Anders</td>
     <td>Germany</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
+    <td>Week 4/5</td>
     <td>Francisco Chang</td>
     <td>Mexico</td>
+  </tr>
+   <tr>
+    <th>Week 6/7</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Week 8/9</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Week 10</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+   <tr>
+    <th>Week 11</th>
+    <th>Contact</th>
+    <th>Country</th>
   </tr>
 </table>
 
