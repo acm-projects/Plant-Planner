@@ -1,6 +1,8 @@
+<p align="center">
+  <img align="center" src="./README-GIFS/watering plant.gif">
+</p>
 
-
-<h1 align="center">Plant Planner 🪴</h1>
+<h1 align="center">🪴 Plant Planner 🪴</h1>
 
 <p align="center"> Have too many plants and a busy schedule, or is that just me? Plant owners know the struggle of balancing a buzzing lifestyle and still taking care of the plants they love, especially when they all have such different needs! Plant Planner takes away the stress by automatically creating watering and fertilizing schedules based off of a plant’s need. Simply type in the name of your plant and Plant Planner will automatically add its watering schedule to your Google Calendar. </p>
 
@@ -157,6 +159,10 @@
 
 <h2>🌿Industry Mentor🌿</h2>
 <h3>Linh Ly</h3><br/><br/>
+
+<p align="center">
+  <img align="center" src="./README-GIFS/plantspopping.gif">
+</p>
 
 <h1>💚🌿🪴Thanks for checking out Plant Planner! 🪴🌿💚</h1>
 </div>
