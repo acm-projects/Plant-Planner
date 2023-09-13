@@ -35,6 +35,12 @@
   <li>Adjust based on local weather conditions</li>
 </ul>
 
+<h2>Tech Stack 🌿</h2>
+<ul>
+  <li>Frontend: Android Studio</li>
+  <li>Backend: Java</li>
+  <li>Database: SQL</li>
+</ul>
 
 <h2>Milestones 🌿</h2>
 
