@@ -161,7 +161,7 @@
 <h3>Linh Ly</h3><br/><br/>
 
 <p align="center">
-  <img align="center" src="./README-GIFS/plantspopping.gif">
+  <img align="center" src="./README-GIFS/plantspoppinggif.gif">
 </p>
 
 <h1>💚🌿🪴Thanks for checking out Plant Planner! 🪴🌿💚</h1>
