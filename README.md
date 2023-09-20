@@ -157,6 +157,82 @@
   <li>Google Calendar Integration Tutorial:</li>
 </ul> 
 
+<h1>Git Cheat Sheet🌿</h1>
+
+
+<table>
+  <tr>
+    <th></th>
+    <th>Pulling from repo</th>
+  </tr>
+  <tr>
+    <td>Step 1</td>
+    <td>I usually will do 'git status' just to make sure I am on the right branch and everything is okay</td>
+  </tr>
+  <tr>
+    <td>Step 2</td>
+    <td>'git add .'</td>
+  </tr>
+  <tr>
+    <td>Step 3</td>
+    <td>'git commit -m "pulling"'</td>
+  </tr>
+  <tr>
+    <td>Step 4</td>
+    <td>"git pull origin main" -> or replace main with another branch if needed</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Pushing to repo</th>
+  </tr>
+  <tr>
+    <td>Step 1</td>
+    <td>I usually will do 'git status' just to make sure I am on the right branch and everything is okay</td>
+  </tr>
+  <tr>
+    <td>Step 2</td>
+    <td>'git add .'</td>
+  </tr>
+  <tr>
+    <td>Step 3</td>
+    <td>'git commit -m "-insert features you have added-"'</td>
+  </tr>
+  <tr>
+    <td>Step 4</td>
+    <td>"git push origin -your-branch-" -> or replace main with another branch if needed</td>
+  </tr>
+  <tr>
+    <td>Step 5</td>
+    <td>Navigate to Github and create a pull request</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Creating a Branch</th>
+  </tr>
+  <tr>
+    <td>Step 1</td>
+    <td>I usually will do 'git status' just to make sure I am on the right repo and everything is okay</td>
+  </tr>
+  <tr>
+    <td>Step 2</td>
+    <td>'git branch -b -insert your name here-'</td>
+  </tr>
+  <tr>
+    <td>Step 3</td>
+    <td>'git checkout -your branch name-'</td>
+  </tr>
+  <tr>
+    <td>Step 4</td>
+    <td>commit and push to see your branch appear on Github</td>
+  </tr>
+</table>
+
 <div align="center">
 <h1>Team Plant Planner 🪴</h1>
 <h2>🌿Project Manager🌿</h2>
