@@ -8,7 +8,7 @@
 
 <h2>MVP 🌿</h2>
 <ul>
-  <li>User Account with Login Authentication</li>
+  <li>User Account with Google Login Authentication</li>
   <li>Page which displays all your plants and their general information</li>
  <ul>
   <li>such as image, plant, nickname, water preferences, light preferences, etc (Discuss what should be here)</li>
