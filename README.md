@@ -144,11 +144,12 @@
   <li><a href="https://www.figma.com/files/team/1286199881861285197">Figma Page</a></li>
   <li><a href="https://developer.android.com/studio">Download Android Studio</a></li>
   <li><a href="https://git-scm.com/downloads">Download Git</a></li>
-  <li>Ask Linh: What exactly do we need to setup SQL?</li>
+  <li><a href="https://www.youtube.com/watch?v=GiqqopBSoHw">Tutorial: Setting up SQL locally</li>
   <li><a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">Download SQL</a></li>
   <li><a href="https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16">SQL Manager</a></li>
+  <li><a href="https://www.youtube.com/watch?v=dYt763QgaTg">Setting up SQL with Android Studio</a></li>
   <li><a href="https://www.youtube.com/watch?v=fis26HvvDII">Android Studio Tutorial</a> - Listen I know its long just view the sections you feel like you need</li>
-  <li>SQL Tutorial:</li>
+  <li><a href="https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver16">SQL Documentation</li>
   <li><a href="https://perenual.com/docs/api">Perenual API Documentation</a></li>
   <li><a href="https://www.youtube.com/watch?v=fis26HvvDII">API Tutorial:</li>
   <li>Git Tutorial:</li>
