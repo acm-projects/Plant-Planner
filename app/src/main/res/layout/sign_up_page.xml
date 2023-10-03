@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/signuppage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FEFAE0"
+        android:clipToOutline="true"
+        tools:layout_editor_absoluteX="-22dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#84A98C"
+        />
+
+    <View
+        android:id="@+id/rectangle_8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="670dp"
+        android:background="#84A98C"
+        />
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <TextView
+        android:id="@+id/plant_plann"
+        android:layout_width="349dp"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/plant_plann"
+        android:textAppearance="@style/plant_plann"
+        android:gravity="center_horizontal|top"
+        />
+    <!--
+      Font family: Montserrat
+      Line height: 55sp
+      -->
+
+    <!-- styles.xml -->
+    <style name="plant_plann">
+        <item name="android:textSize">45sp</item>
+        <item name="android:textColor">#143822</item>
+    </style>
+
+    <!-- strings.xml -->
+    <string name="plant_plann">
+        Plant Planner
+    </string>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
