@@ -1,6 +1,5 @@
 package com.example.plantplanner;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void signIn(){
-        Intent signInIntent = gsc/getSignInIntent();
+        Intent signInIntent = gsc.getSignInIntent();
         startActivityForResult(signInIntent, 1000);
     }
 
@@ -51,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1000)
         {
-            Task<GoogleSignInAccount> ask = GoogleSignIn.getSignedInAccountFromIntent(data);
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
 
             try {
                 task.getResult(ApiException.class);
