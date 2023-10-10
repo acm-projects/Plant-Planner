@@ -4,68 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FEFAE0"
     tools:context=".SecondActivity">
 
-    <View
-        android:id="@+id/topRect"
-        android:layout_width="match_parent"
-        android:layout_height="63dp"
-        android:layout_alignParentLeft="true"
+    <TextView
+        android:id="@+id/topBox"
+        android:layout_width="420dp"
+        android:layout_height="70dp"
         android:layout_alignParentTop="true"
-        android:background="#84A98C"
-        />
+        android:background="#84A98C" />
 
-    <View
-        android:id="@+id/botRect"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
+    <TextView
+        android:id="@+id/bottomBox"
+        android:layout_width="420dp"
+        android:layout_height="110dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="670dp"
         android:background="#84A98C"
         />
-    <!--
-      Font family: Montserrat
-      Line height: 55sp
-      -->
+
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:font-family="Montserrat, sans-serif"
+        android:text="Plant Planner"
+        android:gravity="center"
+        android:textColor="#143822"
+        android:textSize="140px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/whiteRectangle"
+        android:layout_width="280dp"
+        android:layout_height="370dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="34sp"/>
+        android:layout_marginTop="205dp"
+        android:background="@drawable/rounded_shape"/>
 
     <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/Name"
-    android:text="Name"
-    android:layout_centerVertical="true"
-    android:layout_centerHorizontal="true"
-    android:textSize="34sp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/Email"
+        android:layout_marginTop="210dp"
+        android:font-family="Montserrat, sans-serif"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textSize="50px" />
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUp"
+        android:font-family="Montserrat, sans-serif"
         android:text="Email"
-        android:textColor="#4E4242"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/Name"
-        android:textSize="24sp"/>
+        android:textSize="50px"
+        />
 
-    <Button
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/signout"
-        android:text="Sign Out"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/Email"/>
-
-
-
+        android:background="#D9D9D9"
+        android:drawableLeft="@drawable/rounded_shape"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:font-family="Montserrat, sans-serif"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="2dp"
+        android:textColorHint="#5A5A5A"
+ />
 
 
 </RelativeLayout>
