@@ -1,13 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FEFAE0"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/topBox"
+        android:layout_width="420dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="#84A98C" />
+
+    <TextView
+        android:id="@+id/bottomBox"
+        android:layout_width="420dp"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:background="#84A98C"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Plant Planner"
+        android:gravity="center"
+        android:textColor="#143822"
+        android:textSize="140px"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="205dp"
+        app:cardCornerRadius="25dp">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/signUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="SIGN UP"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="38dp"
+                android:layout_below="@id/signUp"
+                android:text="Email"
+                android:textSize="45px" />
+
+            <EditText
+                android:id="@+id/editEmailText"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="#D9D9D9"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="2dp"
+                android:textColorHint="#5A5A5A"
+                android:layout_below="@id/email"/>
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Password"
+                android:layout_marginLeft="38dp"
+                android:textSize="45px"
+                android:layout_marginTop="19dp"
+                android:layout_below="@id/editEmailText"/>
+
+            <EditText
+                android:id="@+id/editPasswordText"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="#D9D9D9"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="2dp"
+                android:textColorHint="#5A5A5A"
+                android:layout_below="@id/password"/>
+
+            <Button
+                android:id="@+id/signInBtn"
+                android:layout_centerVertical="true"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:text="Sign Up"
+                android:backgroundTint="#143822"
+                android:layout_marginTop="19dp"
+                android:layout_below="@id/editPasswordText"/>
+
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="──────  OR ──────"
+                android:textSize="45px"
+                android:layout_below="@id/signInBtn"/>
+
+            <Button
+                android:id="@+id/google_btn"
+                android:layout_centerVertical="true"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:text="Sign up with Google"
+                android:backgroundTint="#143822"
+                android:layout_below="@id/or"/>
 
 
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

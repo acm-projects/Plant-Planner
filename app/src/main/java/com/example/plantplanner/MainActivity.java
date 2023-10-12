@@ -2,6 +2,7 @@ package com.example.plantplanner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -22,10 +23,11 @@ public class MainActivity extends AppCompatActivity {
     GoogleSignInClient gsc;
     ImageView googleBtn;
 
+    @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.sign_up_page);
 
         googleBtn = findViewById(R.id.google_btn);
 

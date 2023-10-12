@@ -3,6 +3,7 @@ package com.example.plantplanner;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -22,14 +23,15 @@ public class SecondActivity extends AppCompatActivity {
     GoogleSignInClient gsc;
     TextView name,email;
     Button signOutBtn;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.user_page);
 
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
-        signOutBtn = findViewById(R.id.signout);
+        signOutBtn = findViewById(R.id.sign_outBtn);
 
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         gsc = GoogleSignIn.getClient(this,gso);
