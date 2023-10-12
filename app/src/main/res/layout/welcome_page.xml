@@ -89,7 +89,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:srcCompat="@drawable/leaf"
+        app:srcCompat="@drawable/leafMW"
         tools:ignore="ImageContrastCheck" />
 
     <ImageView
@@ -99,7 +99,7 @@
         android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/leaf"
+        app:srcCompat="@drawable/leafMW"
         tools:ignore="ImageContrastCheck" />
 
     <ImageView
@@ -120,7 +120,7 @@
         android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:srcCompat="@drawable/leaf"
+        app:srcCompat="@drawable/leafMW"
         tools:ignore="ImageContrastCheck" />
 
     <LinearLayout

@@ -61,7 +61,7 @@
         android:contentDescription="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/leaf"
+        app:srcCompat="@drawable/leafMW"
         tools:ignore="ImageContrastCheck" />
 
     <View
