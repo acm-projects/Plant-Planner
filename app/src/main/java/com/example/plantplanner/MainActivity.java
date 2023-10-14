@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -23,9 +24,13 @@ public class MainActivity extends AppCompatActivity {
     GoogleSignInClient gsc;
     ImageView googleBtn;
 
+
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        try{
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up_page);
 
@@ -40,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
                 signIn();
             }
         });
+        } catch (Exception e) {
+            System.out.println(e);
+;       }
     }
 
     void signIn(){
