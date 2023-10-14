@@ -1,6 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FEFAE0" >
+
+    <TextView
+        android:id="@+id/topBox"
+        android:layout_width="420dp"
+        android:layout_height="70dp"
+        android:background="@drawable/greenBox"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <TextView
+        android:id="@+id/bottomBox"
+        android:layout_width="420dp"
+        android:layout_height="110dp"
+        android:background="@drawable/greenBox"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="643dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="81dp"
+        android:layout_height="71dp"
+        app:srcCompat="@drawable/leaf"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:font-family="Montserrat, sans-serif"
+        android:text="Plant Planner"
+        android:textAlignment="center"
+        android:textColor="#143822"
+        android:textSize="140px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <TextView
+        android:id="@+id/whiteRectangle"
+        android:layout_width="280dp"
+        android:layout_height="370dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBox"
+        app:layout_constraintVertical_bias="0.657" />
+
+    <ImageView
+        android:id="@+id/book"
+        android:layout_width="135dp"
+        android:layout_height="107dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/book"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <TextView
+        android:id="@+id/logIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:font-family="Montserrat, sans-serif"
+        android:gravity="center"
+        android:text="LOG IN"
+        android:textSize="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBox"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#D9D9D9"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:font-family="Montserrat, sans-serif"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="2dp"
+        android:textColorHint="#5A5A5A"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#D9D9D9"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="2dp"
+        android:textColorHint="#5A5A5A"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:text="Log In"
+        android:backgroundTint="#143822"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBox"
+        app:layout_constraintVertical_bias="0.602" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:font-family="Montserrat, sans-serif"
+        android:text="──────  OR  ──────"
+        android:textSize="45px"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBox"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <Button
+        android:id="@+id/google_signin"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:text="Log in with Google"
+        android:backgroundTint="#143822"
+        android:drawableLeft="@drawable/baseline_g_mobiledata_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
+    <TextView
+        android:id="@+id/signup_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:font-family="Montserrat, sans-serif"
+        android:gravity="center"
+        android:text="Don't have an account?   SIGN UP"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.776" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="81dp"
+        android:layout_height="71dp"
+        app:srcCompat="@drawable/leaf"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="112dp"
+        android:layout_height="96dp"
+        app:srcCompat="@drawable/leaf"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="643dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
