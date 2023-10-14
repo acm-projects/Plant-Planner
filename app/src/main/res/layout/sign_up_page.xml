@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,122 +20,175 @@
         android:layout_height="110dp"
         android:layout_alignParentBottom="true"
         android:background="#84A98C"
-        />
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="623dp" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:id="@+id/signUpTitle"
+        android:layout_width="400dp"
         android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:font-family="Montserrat, sans-serif"
         android:text="Plant Planner"
-        android:gravity="center"
+        android:textAlignment="center"
         android:textColor="#143822"
-        android:textSize="140px"
-        android:textStyle="bold" />
+        android:textSize="50sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="198dp"
+        android:layout_height="158dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171"
+        app:srcCompat="@drawable/books" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="81dp"
+        android:layout_height="71dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/leaf"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="114dp"
+        android:layout_height="118dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/leaf"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="623dp" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="280dp"
         android:layout_height="370dp"
-        android:orientation="vertical"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="205dp"
-        app:cardCornerRadius="25dp">
+        android:orientation="vertical"
+        app:cardCornerRadius="25dp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="241dp">
 
         <LinearLayout
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="230dp">
 
             <TextView
                 android:id="@+id/signUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:font-family="Montserrat, sans-serif"
                 android:gravity="center"
                 android:text="SIGN UP"
                 android:textSize="50px" />
 
-            <TextView
-                android:id="@+id/email"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginLeft="38dp"
-                android:layout_below="@id/signUp"
-                android:text="Email"
-                android:textSize="45px" />
-
             <EditText
                 android:id="@+id/editEmailText"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_margin="12dp"
                 android:background="#D9D9D9"
+                android:drawableLeft="@drawable/baseline_account_circle_24"
+                android:drawablePadding="10dp"
                 android:ems="10"
+                android:font-family="Montserrat, sans-serif"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:padding="2dp"
                 android:textColorHint="#5A5A5A"
-                android:layout_below="@id/email"/>
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="307dp" />
 
-            <TextView
-                android:id="@+id/password"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="Password"
-                android:layout_marginLeft="38dp"
-                android:textSize="45px"
-                android:layout_marginTop="19dp"
-                android:layout_below="@id/editEmailText"/>
 
             <EditText
                 android:id="@+id/editPasswordText"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_margin="12dp"
                 android:background="#D9D9D9"
+                android:drawableLeft="@drawable/baseline_info_24"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:padding="2dp"
                 android:textColorHint="#5A5A5A"
-                android:layout_below="@id/password"/>
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="365dp" />
 
             <Button
                 android:id="@+id/signInBtn"
-                android:layout_centerVertical="true"
                 android:layout_width="220dp"
-                android:layout_height="48dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:text="Sign Up"
+                android:layout_margin="8dp"
                 android:backgroundTint="#143822"
-                android:layout_marginTop="19dp"
-                android:layout_below="@id/editPasswordText"/>
+                android:text="Sign Up" />
 
             <TextView
                 android:id="@+id/or"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:text="──────  OR ──────"
-                android:textSize="45px"
-                android:layout_below="@id/signInBtn"/>
+                android:font-family="Montserrat, sans-serif"
+                android:text="──────  OR  ──────"
+                android:textSize="45px" />
 
             <Button
                 android:id="@+id/google_btn"
-                android:layout_centerVertical="true"
                 android:layout_width="220dp"
-                android:layout_height="48dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:text="Sign up with Google"
+                android:layout_margin="8dp"
                 android:backgroundTint="#143822"
-                android:layout_below="@id/or"/>
+                android:drawableLeft="@drawable/baseline_g_mobiledata_24"
+                android:text="Sign up with Google" />
 
+            <TextView
+                android:id="@+id/logInInstead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:font-family="Montserrat, sans-serif"
+                android:text="Already have an account? " />
+
+            <Button
+                android:id="@+id/logInInsteadButton"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:backgroundTint="#143822"
+                android:text="Log in" />
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
 
-</RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

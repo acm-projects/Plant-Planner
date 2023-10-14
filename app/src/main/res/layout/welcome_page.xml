@@ -9,7 +9,7 @@
     android:scaleY="1">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/welcomeBook"
         android:layout_width="215dp"
         android:layout_height="362dp"
         android:layout_marginTop="16dp"
@@ -22,8 +22,8 @@
 
     <View
         android:id="@+id/view2"
-        android:layout_width="wrap_content"
-        android:layout_height="102dp"
+        android:layout_width="420dp"
+        android:layout_height="70dp"
         android:background="#84A98C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,8 +34,8 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_width="420dp"
+        android:layout_height="110dp"
         android:layout_marginTop="616dp"
         android:background="#84A98C"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,21 +46,22 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/welcomeTitle"
         android:layout_width="409dp"
         android:layout_height="112dp"
         android:layout_marginTop="26dp"
-        android:fontFamily="@font/montserrat_subrayada"
+        android:font-family="Montserrat, sans-serif"
         android:text="Welcome To Plant Planner!"
         android:textAlignment="center"
         android:textColor="#143822"
         android:textSize="42sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/welcomeToSignUp"
         android:layout_width="273dp"
         android:layout_height="53dp"
         android:layout_marginStart="94dp"
@@ -68,7 +69,7 @@
         android:layout_marginEnd="94dp"
         android:layout_marginBottom="167dp"
         android:backgroundTint="#D9D9D9"
-        android:fontFamily="@font/montserrat_subrayada"
+        android:font-family="Montserrat, sans-serif"
         android:text="Sign up with email"
         android:textAlignment="center"
         android:textColor="#143822"
@@ -77,8 +78,8 @@
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTitle"
+        app:layout_constraintVertical_bias="0.576" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -104,8 +105,8 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="135dp"
-        android:layout_height="102dp"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
         android:contentDescription="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -126,12 +127,12 @@
     <LinearLayout
         android:layout_width="387dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="63dp"
+        android:layout_marginBottom="64dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.707">
@@ -142,21 +143,22 @@
             android:layout_height="30dp"
             android:layout_marginEnd="4dp"
             android:layout_marginBottom="128dp"
-            android:fontFamily="@font/montserrat_subrayada"
+            android:font-family="Montserrat, sans-serif"
             android:text="Already have an account?"
             android:textSize="16sp" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/welcomeToLogIn"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_marginBottom="112dp"
-            android:backgroundTint="#5ED8D8D8"
-            android:fontFamily="@font/montserrat_subrayada"
+            android:backgroundTint="#D9D9D9"
+            android:font-family="Montserrat, sans-serif"
             android:insetTop="4dp"
+            android:textSize="18sp"
             android:text="Log In"
-            android:textAlignment="viewStart"
-            android:textColor="#49454F"
+            android:textAlignment="center"
+            android:textColor="#143822"
             android:textStyle="bold"
             app:iconPadding="8dp" />
     </LinearLayout>

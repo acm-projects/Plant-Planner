@@ -44,8 +44,8 @@
 
     <View
         android:id="@+id/view4"
-        android:layout_width="wrap_content"
-        android:layout_height="102dp"
+        android:layout_width="420dp"
+        android:layout_height="70dp"
         android:background="#84A98C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,18 +56,17 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="135dp"
-        android:layout_height="102dp"
+        android:layout_width="81dp"
+        android:layout_height="71dp"
         android:contentDescription="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/leafMW"
-        tools:ignore="ImageContrastCheck" />
+        app:srcCompat="@drawable/leaf" />
 
     <View
         android:id="@+id/view3"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_width="420dp"
+        android:layout_height="110dp"
         android:layout_marginTop="616dp"
         android:background="#84A98C"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -103,13 +102,14 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="151dp"
-        android:layout_height="66dp"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@android:color/holo_red_light"
         android:fontFamily="@font/montserrat_subrayada"
         android:text="Log Out"
+        android:textStyle="bold"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,6 +129,7 @@
             android:layout_width="0dp"
             android:layout_height="76dp"
             android:layout_weight="1"
+            android:backgroundTint="#5A5A5A"
             android:contentDescription="go to profile"
             android:scaleType="fitCenter"
             android:scaleX="1"
@@ -145,6 +146,17 @@
             android:scaleX="1"
             android:scaleY="1"
             app:srcCompat="@drawable/calendaricon" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:contentDescription="go to search"
+            android:scaleType="fitCenter"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:srcCompat="@drawable/searchicon" />
 
         <ImageButton
             android:id="@+id/plantButton"
@@ -168,16 +180,6 @@
             android:scaleY="1"
             app:srcCompat="@drawable/helpicon" />
 
-        <ImageButton
-            android:id="@+id/searchButton"
-            android:layout_width="0dp"
-            android:layout_height="76dp"
-            android:layout_weight="1"
-            android:contentDescription="go to search"
-            android:scaleType="fitCenter"
-            android:scaleX="1"
-            android:scaleY="1"
-            app:srcCompat="@drawable/searchicon" />
     </LinearLayout>
 
     <TextView
