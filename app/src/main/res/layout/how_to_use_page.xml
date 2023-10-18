@@ -10,7 +10,7 @@
         android:id="@+id/topBox"
         android:layout_width="420dp"
         android:layout_height="70dp"
-        android:background="@drawable/greenBox"
+        android:background="@drawable/greenbox"
         tools:layout_editor_absoluteX="-5dp"
         tools:layout_editor_absoluteY="-1dp" />
 
@@ -18,7 +18,7 @@
         android:id="@+id/bottomBox"
         android:layout_width="420dp"
         android:layout_height="110dp"
-        android:background="@drawable/greenBox"
+        android:background="@drawable/greenbox"
         tools:layout_editor_absoluteX="-5dp"
         tools:layout_editor_absoluteY="624dp" />
 
