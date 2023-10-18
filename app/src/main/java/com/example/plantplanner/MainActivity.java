@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         try{
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up_page);
 
