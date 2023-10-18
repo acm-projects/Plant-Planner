@@ -59,13 +59,13 @@
         android:layout_height="200dp"
         android:layout_centerInParent="true"
         android:layout_margin="20dp"
-        android:src="@drawable/book"
+        android:src="@drawable/books"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.18" />
 
     <TextView
         android:id="@+id/plantName"
@@ -77,8 +77,10 @@
         android:textSize="50px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/topBox" />
+        app:layout_constraintTop_toTopOf="@+id/topBox"
+        app:layout_constraintVertical_bias="0.468" />
 
     <TextView
         android:id="@+id/plantNickname"
@@ -94,7 +96,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592" />
+        app:layout_constraintVertical_bias="0.55" />
 
     <TextView
         android:id="@+id/plantWateringSchedule"
@@ -109,12 +111,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676" />
+        app:layout_constraintVertical_bias="0.64" />
 
     <Button
         android:id="@+id/addButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:backgroundTint="#84A98C"
         android:text="Add"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -126,8 +128,8 @@
 
     <Button
         android:id="@+id/deleteButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:backgroundTint="#D90429"
         android:text="Delete"
         app:layout_constraintBottom_toBottomOf="@+id/bottomBox"

@@ -74,67 +74,170 @@
 
     <TextView
         android:id="@+id/profileInfo"
-        android:layout_width="204dp"
-        android:layout_height="49dp"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
         android:font-family="Montserrat, sans-serif"
         android:gravity="center"
-        android:textSize="15dp"
         android:text="View your profile information and account details!"
         android:textColor="#143822"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintHorizontal_bias="0.871"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315" />
+        app:layout_constraintVertical_bias="0.318" />
 
     <TextView
         android:id="@+id/calendarInfo"
-        android:layout_width="196dp"
-        android:layout_height="63dp"
+        android:layout_width="225dp"
+        android:layout_height="53dp"
         android:font-family="Montserrat, sans-serif"
         android:gravity="center"
-        android:textSize="15dp"
         android:text="View what plants you have to water and when! Connects with your Google Calendar!"
         android:textColor="#143822"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomBox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintHorizontal_bias="0.801"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.448" />
+        app:layout_constraintVertical_bias="0.464" />
 
     <TextView
         android:id="@+id/searchInfo"
-        android:layout_width="198dp"
-        android:layout_height="60dp"
+        android:layout_width="235dp"
+        android:layout_height="54dp"
         android:font-family="Montserrat, sans-serif"
         android:gravity="center"
-        android:textSize="15dp"
         android:text="Search for plants and add them by clicking into their description!"
         android:textColor="#143822"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomBox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.591" />
+        app:layout_constraintVertical_bias="0.607" />
 
     <TextView
         android:id="@+id/currentListInfo"
-        android:layout_width="212dp"
-        android:layout_height="72dp"
+        android:layout_width="242dp"
+        android:layout_height="68dp"
         android:font-family="Montserrat, sans-serif"
         android:gravity="center"
-        android:textSize="15dp"
         android:text="View your current plants and edit your list by clicking on their descriptions!"
         android:textColor="#143822"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.757" />
+        app:layout_constraintVertical_bias="0.769" />
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profileInfo"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/bottomprofileicon" />
+
+    <ImageView
+        android:id="@+id/imageViewCalendar"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/calendaricon"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPlant"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/planticon"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="510dp" />
+
+    <ImageView
+        android:id="@+id/imageViewSearch"
+        android:layout_width="93dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/searchicon"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <LinearLayout
+        android:layout_width="398dp"
+        android:layout_height="102dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:contentDescription="go to profile"
+            android:scaleType="fitCenter"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:srcCompat="@drawable/bottomprofileicon" />
+
+        <ImageButton
+            android:id="@+id/calendarButton"
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:contentDescription="go to calendar"
+            android:scaleType="fitCenter"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:srcCompat="@drawable/calendaricon" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:contentDescription="go to search"
+            android:scaleType="fitCenter"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:srcCompat="@drawable/searchicon" />
+
+        <ImageButton
+            android:id="@+id/plantButton"
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:contentDescription="go to plants"
+            android:scaleType="fitCenter"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:srcCompat="@drawable/planticon" />
+
+        <ImageButton
+            android:id="@+id/helpButton"
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:backgroundTint="#5A5A5A"
+            android:contentDescription="go to help"
+            android:scaleType="fitCenter"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:srcCompat="@drawable/helpicon" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
