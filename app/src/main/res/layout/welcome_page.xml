@@ -14,7 +14,6 @@
         android:layout_height="362dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@null"
-        android:src="@tools:sample/avatars"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
@@ -45,12 +44,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leaf"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="112dp"
+        android:layout_height="108dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/leaf" />
+
     <TextView
         android:id="@+id/welcomeTitle"
         android:layout_width="409dp"
         android:layout_height="112dp"
         android:layout_marginTop="26dp"
-        android:font-family="Montserrat, sans-serif"
+
+        android:fontFamily="sans-serif"
         android:text="Welcome To Plant Planner!"
         android:textAlignment="center"
         android:textColor="#143822"
@@ -69,7 +88,8 @@
         android:layout_marginEnd="94dp"
         android:layout_marginBottom="167dp"
         android:backgroundTint="#D9D9D9"
-        android:font-family="Montserrat, sans-serif"
+
+        android:fontFamily="sans-serif"
         android:text="Sign up with email"
         android:textAlignment="center"
         android:textColor="#143822"
@@ -80,49 +100,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeTitle"
         app:layout_constraintVertical_bias="0.576" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="132dp"
-        android:layout_height="98dp"
-        android:layout_marginEnd="1dp"
-        android:contentDescription="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:srcCompat="@drawable/leafMW"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="134dp"
-        android:layout_height="97dp"
-        android:contentDescription="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/leafMW"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="82dp"
-        android:layout_height="66dp"
-        android:contentDescription="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/leaf"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="130dp"
-        android:layout_height="98dp"
-        android:layout_marginEnd="4dp"
-        android:contentDescription="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:srcCompat="@drawable/leafMW"
-        tools:ignore="ImageContrastCheck" />
 
     <LinearLayout
         android:layout_width="387dp"
@@ -143,7 +120,8 @@
             android:layout_height="30dp"
             android:layout_marginEnd="4dp"
             android:layout_marginBottom="128dp"
-            android:font-family="Montserrat, sans-serif"
+
+            android:fontFamily="sans-serif"
             android:text="Already have an account?"
             android:textSize="16sp" />
 
@@ -153,7 +131,8 @@
             android:layout_height="50dp"
             android:layout_marginBottom="112dp"
             android:backgroundTint="#D9D9D9"
-            android:font-family="Montserrat, sans-serif"
+
+            android:fontFamily="sans-serif"
             android:insetTop="4dp"
             android:textSize="18sp"
             android:text="Log In"
