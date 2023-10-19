@@ -16,7 +16,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
-public class SecondActivity extends AppCompatActivity {
+public class UserPageActivity extends SignUpPageActivity {
 
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
@@ -59,7 +59,7 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onComplete(Task<Void> task) {
                 finish();
-                startActivity(new Intent(SecondActivity.this, MainActivity.class));
+                startActivity(new Intent(UserPageActivity.this, MainActivity.class));
             }
         });
     }
