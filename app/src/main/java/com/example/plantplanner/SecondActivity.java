@@ -29,9 +29,9 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_page);
 
-        name = findViewById(R.id.editEmailText);
-        email = findViewById(R.id.editPasswordText);
-        signOutBtn = findViewById(R.id.google_btn);
+        name = findViewById(R.id.textView4);
+        email = findViewById(R.id.textView5);
+        signOutBtn = findViewById(R.id.button2);
 
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         gsc = GoogleSignIn.getClient(this,gso);
