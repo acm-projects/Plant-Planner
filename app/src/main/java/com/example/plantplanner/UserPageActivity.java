@@ -1,66 +1,67 @@
 package com.example.plantplanner;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.ImageButton;
 
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class UserPageActivity extends SignUpPageActivity {
+public class UserPageActivity extends AppCompatActivity {
 
-    GoogleSignInOptions gso;
-    GoogleSignInClient gsc;
-    TextView name,email;
-    Button signOutBtn;
-    @SuppressLint("MissingInflatedId")
+    ImageButton calendarBtn;
+    ImageButton searchBtn;
+    ImageButton curPlantsBtn;
+    ImageButton helpBtn;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_page);
 
-        name = findViewById(R.id.textView4);
-        email = findViewById(R.id.textView5);
-        signOutBtn = findViewById(R.id.button2);
-
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
-        gsc = GoogleSignIn.getClient(this,gso);
-
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-        if (acct != null)
-        {
-            String personName = acct.getDisplayName();
-            String personEmail = acct.getEmail();
-            name.setText(personName);
-            email.setText(personEmail);
-        }
-
-        signOutBtn.setOnClickListener(new View.OnClickListener() {
+        // Navigates to Calendar Page
+        calendarBtn = (ImageButton)findViewById(R.id.calendarButton);
+        calendarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                signOut();
+                Intent intent = new Intent(UserPageActivity.this, CalendarActivity.class);
+                startActivity(intent);
             }
         });
 
-    }
 
-    void signOut()
-    {
-        gsc.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
+        // Navigates to Search Plants Page
+        searchBtn = (ImageButton)findViewById(R.id.searchButton);
+        searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onComplete(Task<Void> task) {
-                finish();
-                startActivity(new Intent(UserPageActivity.this, MainActivity.class));
+            public void onClick(View view) {
+                Intent intent = new Intent(UserPageActivity.this, SearchPageActivity.class);
+                startActivity(intent);
             }
         });
+
+
+        // Navigates to Current Plants Page
+        curPlantsBtn = (ImageButton)findViewById(R.id.plantButton);
+        curPlantsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserPageActivity.this, CurrentPlantsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        // Navigates to HowToUse Page
+        helpBtn = (ImageButton)findViewById(R.id.helpButton);
+        helpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserPageActivity.this, HowToUseActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

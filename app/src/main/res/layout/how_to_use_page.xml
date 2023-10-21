@@ -26,7 +26,6 @@
         android:id="@+id/PlantPlannertitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:font-family="Montserrat, sans-serif"
         android:gravity="center"
         android:text="Plant Planner"
         android:textColor="#143822"
@@ -44,7 +43,8 @@
         android:layout_width="81dp"
         android:layout_height="71dp"
         tools:layout_editor_absoluteX="334dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        tools:layout_editor_absoluteY="-2dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/howToUseTitle"
