@@ -9,10 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SearchPageActivity extends AppCompatActivity {
 
-    ImageButton userBtn;
-    ImageButton calendarBtn;
-    ImageButton curPlantsBtn;
-    ImageButton helpBtn;
+    private ImageButton userBtn;
+    private ImageButton calendarBtn;
+    private ImageButton curPlantsBtn;
+    private ImageButton helpBtn;
 
 
     @Override
@@ -27,6 +27,7 @@ public class SearchPageActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(SearchPageActivity.this, UserPageActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -38,6 +39,7 @@ public class SearchPageActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(SearchPageActivity.this, CalendarActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -49,6 +51,7 @@ public class SearchPageActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(SearchPageActivity.this, CurrentPlantsActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -60,6 +63,7 @@ public class SearchPageActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(SearchPageActivity.this, HowToUseActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 

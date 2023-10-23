@@ -5,43 +5,45 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FEFAE0" >
+
     <TextView
         android:id="@+id/topBox"
         android:layout_width="420dp"
         android:layout_height="70dp"
         android:background="@drawable/greenbox"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/bottomBox"
         android:layout_width="420dp"
         android:layout_height="110dp"
         android:background="@drawable/greenbox"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="622dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
-        app:srcCompat="@drawable/leaf"
         android:layout_width="81dp"
         android:layout_height="71dp"
-        tools:layout_editor_absoluteX="334dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leaf" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="115dp"
         android:layout_height="105dp"
-        app:srcCompat="@drawable/leaf"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="627dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bottomBox"
+        app:srcCompat="@drawable/leaf" />
 
     <TextView
         android:id="@+id/PlantPlannertitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:font-family="Montserrat, sans-serif"
+
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Plant Planner"
         android:textColor="#143822"
@@ -70,7 +72,8 @@
     <TextView
         android:id="@+id/plantName"
         android:layout_height="wrap_content"
-        android:font-family="Montserrat, sans-serif"
+
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Plant Name"
         android:textColor="#143822"
@@ -86,7 +89,8 @@
         android:id="@+id/plantNickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:font-family="Montserrat, sans-serif"
+
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Plant Nickname"
         android:textColor="#143822"
@@ -102,7 +106,8 @@
         android:id="@+id/plantWateringSchedule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:font-family="Montserrat, sans-serif"
+
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Watering Schedule"
         android:textColor="#143822"

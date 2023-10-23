@@ -11,31 +11,32 @@
         android:id="@+id/topBox"
         android:layout_width="420dp"
         android:layout_height="70dp"
-        android:layout_alignParentTop="true"
-        android:background="#84A98C" />
+        android:background="@drawable/greenbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/bottomBox"
         android:layout_width="420dp"
         android:layout_height="110dp"
-        android:layout_alignParentBottom="true"
-        android:background="#84A98C"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="623dp" />
+        android:background="@drawable/greenbox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="81dp"
         android:layout_height="71dp"
-        app:srcCompat="@drawable/leaf"
-        tools:layout_editor_absoluteX="334dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leaf" />
 
     <TextView
         android:id="@+id/welcomeTitle"
         android:layout_width="400dp"
         android:layout_height="70dp"
-        android:font-family="Montserrat, sans-serif"
+
+        android:fontFamily="sans-serif"
         android:text="Plant Planner"
         android:textAlignment="center"
         android:textColor="#143822"
@@ -65,17 +66,17 @@
         android:id="@+id/imageView3"
         android:layout_width="81dp"
         android:layout_height="71dp"
-        app:srcCompat="@drawable/leaf"
-        tools:layout_editor_absoluteX="334dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leaf" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="114dp"
-        android:layout_height="118dp"
-        app:srcCompat="@drawable/leaf"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="621dp" />
+        android:layout_width="108dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/leaf" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="280dp"
@@ -101,7 +102,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:font-family="Montserrat, sans-serif"
+
+                android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:paddingBottom="2dp"
                 android:text="LOG IN"
@@ -116,11 +118,13 @@
                 android:drawableLeft="@drawable/baseline_account_circle_24"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:font-family="Montserrat, sans-serif"
+
+                android:fontFamily="sans-serif"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:padding="2dp"
                 android:textColorHint="#5A5A5A"
+                tools:ignore="TouchTargetSizeCheck"
                 tools:layout_editor_absoluteX="100dp"
                 tools:layout_editor_absoluteY="307dp" />
 
@@ -138,6 +142,7 @@
                 android:inputType="textPassword"
                 android:padding="2dp"
                 android:textColorHint="#5A5A5A"
+                tools:ignore="TouchTargetSizeCheck"
                 tools:layout_editor_absoluteX="100dp"
                 tools:layout_editor_absoluteY="365dp" />
 
@@ -153,13 +158,15 @@
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/topBox"
-                app:layout_constraintVertical_bias="0.602" />
+                app:layout_constraintVertical_bias="0.602"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/or"
                 android:layout_width="200dp"
                 android:layout_height="25dp"
-                android:font-family="Montserrat, sans-serif"
+
+                android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:text="──────  OR  ──────"
                 android:textSize="45px"
@@ -183,14 +190,16 @@
                 app:layout_constraintHorizontal_bias="0.496"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.736" />
+                app:layout_constraintVertical_bias="0.736"
+                tools:ignore="TouchTargetSizeCheck" />
 
 
             <TextView
                 android:id="@+id/signup_option"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:font-family="Montserrat, sans-serif"
+
+                android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:text="Don't have an account?"
                 app:layout_constraintBottom_toBottomOf="@+id/bottomBox"
@@ -206,7 +215,8 @@
                 android:layout_height="40dp"
                 android:layout_margin="8dp"
                 android:backgroundTint="#143822"
-                android:text="Sign up" />
+                android:text="Sign up"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
