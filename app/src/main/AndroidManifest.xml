@@ -13,10 +13,10 @@
         android:theme="@style/Theme.PlantPlanner"
         tools:targetApi="31">
         <activity
-            android:name=".SecondActivity"
+            android:name=".UserPageActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SignUpPageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,5 +28,9 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
 
 </manifest>

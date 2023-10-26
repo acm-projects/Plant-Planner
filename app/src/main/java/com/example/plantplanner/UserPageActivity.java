@@ -7,25 +7,25 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class CurrentPlantsActivity extends AppCompatActivity {
+public class UserPageActivity extends AppCompatActivity {
 
-    ImageButton userBtn;
-    ImageButton searchBtn;
     ImageButton calendarBtn;
+    ImageButton searchBtn;
+    ImageButton curPlantsBtn;
     ImageButton helpBtn;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.current_plants_page);
+        setContentView(R.layout.user_page);
 
-        // Navigates to User Page
-        userBtn = (ImageButton)findViewById(R.id.profileButton);
-        userBtn.setOnClickListener(new View.OnClickListener() {
+        // Navigates to Calendar Page
+        calendarBtn = (ImageButton)findViewById(R.id.calendarButton);
+        calendarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CurrentPlantsActivity.this, UserPageActivity.class);
+                Intent intent = new Intent(UserPageActivity.this, CalendarActivity.class);
                 startActivity(intent);
             }
         });
@@ -36,18 +36,18 @@ public class CurrentPlantsActivity extends AppCompatActivity {
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CurrentPlantsActivity.this, SearchPageActivity.class);
+                Intent intent = new Intent(UserPageActivity.this, SearchPageActivity.class);
                 startActivity(intent);
             }
         });
 
 
-        // Navigates to Calendar Page
-        calendarBtn = (ImageButton)findViewById(R.id.calendarButton);
-        calendarBtn.setOnClickListener(new View.OnClickListener() {
+        // Navigates to Current Plants Page
+        curPlantsBtn = (ImageButton)findViewById(R.id.plantButton);
+        curPlantsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CurrentPlantsActivity.this, CalendarActivity.class);
+                Intent intent = new Intent(UserPageActivity.this, CurrentPlantsActivity.class);
                 startActivity(intent);
             }
         });
@@ -58,11 +58,10 @@ public class CurrentPlantsActivity extends AppCompatActivity {
         helpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CurrentPlantsActivity.this, HowToUseActivity.class);
+                Intent intent = new Intent(UserPageActivity.this, HowToUseActivity.class);
                 startActivity(intent);
             }
         });
 
     }
 }
-

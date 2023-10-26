@@ -11,17 +11,17 @@
         android:id="@+id/topBox"
         android:layout_width="420dp"
         android:layout_height="70dp"
-        android:background="@drawable/greenBox"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        android:layout_alignParentTop="true"
+        android:background="#84A98C" />
 
     <TextView
         android:id="@+id/bottomBox"
         android:layout_width="420dp"
         android:layout_height="110dp"
-        android:background="@drawable/greenBox"
+        android:layout_alignParentBottom="true"
+        android:background="#84A98C"
         tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="621dp" />
+        tools:layout_editor_absoluteY="623dp" />
 
     <ImageView
         android:id="@+id/imageView4"
