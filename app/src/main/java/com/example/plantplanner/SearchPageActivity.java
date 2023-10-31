@@ -6,6 +6,10 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.android.volley.BuildConfig;
+import com.android.volley.RequestQueue;
 
 public class SearchPageActivity extends AppCompatActivity {
 
@@ -14,11 +18,24 @@ public class SearchPageActivity extends AppCompatActivity {
     private ImageButton curPlantsBtn;
     private ImageButton helpBtn;
 
+    //private static final String PERENUAL_API_KEY = "sk-k9GS6539ce97aae8e2713";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_plant_page);
+
+
+
+
+
+
+
+
+
+
+
+
 
         // Navigates to User Page
         userBtn = (ImageButton)findViewById(R.id.profileButton);
