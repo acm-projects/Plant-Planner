@@ -11,10 +11,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 public class customAdapter extends RecyclerView.Adapter<customAdapter.ViewHolder> {
     private final Context context;
-    private final ArrayList<plant> plantArrayList;
+    private final ArrayList<Plant> plantArrayList;
 
     // Constructor
-    public customAdapter(Context context, ArrayList<plant> plantArrayList) {
+    public customAdapter(Context context, ArrayList<Plant> plantArrayList) {
         this.context = context;
         this.plantArrayList = plantArrayList;
     }
@@ -30,7 +30,7 @@ public class customAdapter extends RecyclerView.Adapter<customAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull customAdapter.ViewHolder holder, int position) {
         // to set data to textview and imageview of each card layout
-        plant p = plantArrayList.get(position);
+        Plant p = plantArrayList.get(position);
         holder.plantCommonNameTV.setText(p.getCommon_name());
         holder.plantScientificNameTV.setText("" + p.getScientific_name());
         holder.plantIV.setImageResource(p.getPlant_image());
