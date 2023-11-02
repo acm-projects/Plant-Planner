@@ -18,7 +18,7 @@ public class SearchPageActivity extends AppCompatActivity {
     private ImageButton curPlantsBtn;
     private ImageButton helpBtn;
 
-    //private static final String PERENUAL_API_KEY = "sk-k9GS6539ce97aae8e2713";
+    private static final String PERENUAL_API_KEY = "sk-k9GS6539ce97aae8e2713";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

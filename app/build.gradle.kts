@@ -6,6 +6,10 @@ android {
     namespace = "com.example.plantplanner"
     compileSdk = 33
 
+    buildFeatures {
+        buildConfig = true
+    }
+
     defaultConfig {
         applicationId = "com.example.plantplanner"
         minSdk = 24
@@ -14,7 +18,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "PERENUAL_API_KEY", "")
+        buildConfigField("String", "PERENUAL_API_KEY", "\"sk-k9GS6539ce97aae8e2713\"")
     }
 
     buildTypes {
