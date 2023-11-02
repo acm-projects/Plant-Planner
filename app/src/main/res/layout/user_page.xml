@@ -12,31 +12,28 @@
         android:layout_height="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/montserrat_subrayada"
         android:text="Number of Plants"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/profileIcon"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/email"
         android:layout_width="164dp"
         android:layout_height="21dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/montserrat_subrayada"
         android:text="Email"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/profileIcon"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/name"
         android:layout_width="167dp"
         android:layout_height="24dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
-        android:fontFamily="@font/montserrat_subrayada"
         android:text="Name"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/profileIcon"
@@ -44,8 +41,8 @@
 
     <View
         android:id="@+id/view4"
-        android:layout_width="wrap_content"
-        android:layout_height="102dp"
+        android:layout_width="420dp"
+        android:layout_height="70dp"
         android:background="#84A98C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,18 +53,17 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="135dp"
-        android:layout_height="102dp"
+        android:layout_width="81dp"
+        android:layout_height="71dp"
         android:contentDescription="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/leafMW"
-        tools:ignore="ImageContrastCheck" />
+        app:srcCompat="@drawable/leaf" />
 
     <View
         android:id="@+id/view3"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_width="420dp"
+        android:layout_height="110dp"
         android:layout_marginTop="616dp"
         android:background="#84A98C"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -102,16 +98,20 @@
         app:layout_constraintTop_toBottomOf="@+id/profileIcon" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="151dp"
-        android:layout_height="66dp"
+        android:id="@+id/sign_outBtn"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@android:color/holo_red_light"
-        android:fontFamily="@font/montserrat_subrayada"
+<<<<<<< HEAD
+=======
+        android:fontFamily="sans-serif"
+>>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
         android:text="Log Out"
         android:textColor="#000000"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/line" />
 
@@ -129,6 +129,7 @@
             android:layout_width="0dp"
             android:layout_height="76dp"
             android:layout_weight="1"
+            android:backgroundTint="#5A5A5A"
             android:contentDescription="go to profile"
             android:scaleType="fitCenter"
             android:scaleX="1"
@@ -145,6 +146,17 @@
             android:scaleX="1"
             android:scaleY="1"
             app:srcCompat="@drawable/calendaricon" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:contentDescription="go to search"
+            android:scaleType="fitCenter"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:srcCompat="@drawable/searchicon" />
 
         <ImageButton
             android:id="@+id/plantButton"
@@ -168,23 +180,12 @@
             android:scaleY="1"
             app:srcCompat="@drawable/helpicon" />
 
-        <ImageButton
-            android:id="@+id/searchButton"
-            android:layout_width="0dp"
-            android:layout_height="76dp"
-            android:layout_weight="1"
-            android:contentDescription="go to search"
-            android:scaleType="fitCenter"
-            android:scaleX="1"
-            android:scaleY="1"
-            app:srcCompat="@drawable/searchicon" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/plantPlannerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_subrayada"
         android:text="Plant Planner"
         android:textColor="#143822"
         android:textSize="24sp"
