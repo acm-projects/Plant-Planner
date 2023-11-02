@@ -9,10 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class HowToUseActivity extends AppCompatActivity {
 
-    ImageButton userBtn;
-    ImageButton searchBtn;
-    ImageButton calendarBtn;
-    ImageButton curPlantsBtn;
+    private ImageButton userBtn;
+    private ImageButton searchBtn;
+    private ImageButton calendarBtn;
+    private ImageButton curPlantsBtn;
 
 
     @Override
@@ -27,6 +27,7 @@ public class HowToUseActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(HowToUseActivity.this, UserPageActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -38,6 +39,7 @@ public class HowToUseActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(HowToUseActivity.this, SearchPageActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -49,6 +51,7 @@ public class HowToUseActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(HowToUseActivity.this, CalendarActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -60,6 +63,7 @@ public class HowToUseActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(HowToUseActivity.this, CurrentPlantsActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
