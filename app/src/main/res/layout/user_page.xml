@@ -12,7 +12,6 @@
         android:layout_height="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/montserrat_subrayada"
         android:text="Number of Plants"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/profileIcon"
@@ -24,7 +23,6 @@
         android:layout_height="21dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/montserrat_subrayada"
         android:text="Email"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/profileIcon"
@@ -36,7 +34,6 @@
         android:layout_height="24dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
-        android:fontFamily="@font/montserrat_subrayada"
         android:text="Name"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/profileIcon"
@@ -107,7 +104,10 @@
         android:layout_marginTop="14dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@android:color/holo_red_light"
+<<<<<<< HEAD
+=======
         android:fontFamily="sans-serif"
+>>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
         android:text="Log Out"
         android:textColor="#000000"
         android:textSize="16sp"
@@ -186,7 +186,6 @@
         android:id="@+id/plantPlannerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_subrayada"
         android:text="Plant Planner"
         android:textColor="#143822"
         android:textSize="24sp"

@@ -11,16 +11,26 @@
         android:layout_width="420dp"
         android:layout_height="70dp"
         android:background="@drawable/greenbox"
+<<<<<<< HEAD
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-2dp" />
+=======
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
 
     <TextView
         android:id="@+id/bottomBox"
         android:layout_width="420dp"
         android:layout_height="110dp"
         android:background="@drawable/greenbox"
+<<<<<<< HEAD
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="622dp" />
+=======
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+>>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
 
     <ImageView
         android:id="@+id/imageView3"

@@ -4,23 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FEFAE0">
+    android:background="#FEFAE0"
+    tools:context=".SecondActivity" >
 
     <TextView
         android:id="@+id/topBox"
         android:layout_width="420dp"
         android:layout_height="70dp"
+<<<<<<< HEAD
+        android:layout_alignParentTop="true"
+        android:background="#84A98C" />
+=======
         android:background="@drawable/greenbox"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
 
     <TextView
         android:id="@+id/bottomBox"
         android:layout_width="420dp"
         android:layout_height="110dp"
+<<<<<<< HEAD
+        android:layout_alignParentBottom="true"
+        android:background="#84A98C"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="623dp" />
+=======
         android:background="@drawable/greenbox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+>>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
 
     <ImageView
         android:id="@+id/imageView4"
