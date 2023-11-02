@@ -18,10 +18,10 @@ import java.util.Date;
 
 public class CalendarActivity extends AppCompatActivity {
 
-    ImageButton userBtn;
-    ImageButton searchBtn;
-    ImageButton curPlantsBtn;
-    ImageButton helpBtn;
+    private ImageButton userBtn;
+    private ImageButton searchBtn;
+    private ImageButton curPlantsBtn;
+    private ImageButton helpBtn;
 
 
     @Override
@@ -36,6 +36,7 @@ public class CalendarActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(CalendarActivity.this, UserPageActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -47,6 +48,7 @@ public class CalendarActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(CalendarActivity.this, SearchPageActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -58,6 +60,7 @@ public class CalendarActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(CalendarActivity.this, CurrentPlantsActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -69,6 +72,7 @@ public class CalendarActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(CalendarActivity.this, HowToUseActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
