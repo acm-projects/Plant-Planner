@@ -87,12 +87,10 @@
         android:layout_marginTop="141dp"
         android:layout_marginEnd="94dp"
         android:layout_marginBottom="167dp"
-        android:backgroundTint="#D9D9D9"
-
+        android:backgroundTint="#143822"
         android:fontFamily="sans-serif"
         android:text="Sign up with email"
         android:textAlignment="center"
-        android:textColor="#143822"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/view"
@@ -111,7 +109,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.707">
 
         <TextView
@@ -120,7 +117,6 @@
             android:layout_height="30dp"
             android:layout_marginEnd="4dp"
             android:layout_marginBottom="128dp"
-
             android:fontFamily="sans-serif"
             android:text="Already have an account?"
             android:textSize="16sp" />
@@ -130,14 +126,12 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_marginBottom="112dp"
-            android:backgroundTint="#D9D9D9"
-
+            android:backgroundTint="#143822"
             android:fontFamily="sans-serif"
             android:insetTop="4dp"
             android:textSize="18sp"
             android:text="Log In"
             android:textAlignment="center"
-            android:textColor="#143822"
             android:textStyle="bold"
             app:iconPadding="8dp" />
     </LinearLayout>

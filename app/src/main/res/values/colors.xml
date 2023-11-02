@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <style name="CalenderViewCustom" parent="Theme.AppCompat">
+        <item name="colorAccent">@android:color/holo_green_light</item>
+        <item name="colorPrimary">@android:color/darker_gray</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
 </resources>

@@ -11,6 +11,8 @@
         android:layout_width="420dp"
         android:layout_height="70dp"
         android:background="@drawable/greenbox"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-1dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,14 +21,14 @@
         android:layout_width="420dp"
         android:layout_height="110dp"
         android:background="@drawable/greenbox"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="624dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/PlantPlannertitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Plant Planner"
@@ -44,6 +46,8 @@
         android:id="@+id/imageView3"
         android:layout_width="81dp"
         android:layout_height="71dp"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="-2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/leaf" />
@@ -52,7 +56,6 @@
         android:id="@+id/howToUseTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="How To Use Plant Planner!"

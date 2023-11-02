@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" package="com.example.plantplanner">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -25,7 +25,8 @@
             android:exported="false" />
         <activity
             android:name=".IndivPlantActivity"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".SearchPageActivity"
             android:exported="false" />
@@ -45,5 +46,9 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+
+    <uses-sdk android:minSdkVersion="14" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
 </manifest>

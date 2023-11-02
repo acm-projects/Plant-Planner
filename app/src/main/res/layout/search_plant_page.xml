@@ -6,14 +6,17 @@
     android:layout_height="match_parent"
     android:background="#FEFAE0">
 
-
     <View
-        android:id="@+id/view4"
+        android:id="@+id/topBox"
         android:layout_width="420dp"
         android:layout_height="70dp"
         android:background="#84A98C"
-        tools:ignore="MissingConstraints" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -23,7 +26,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/leaf" />
-
 
     <View
         android:id="@+id/view3"
@@ -106,28 +108,27 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/plantPlannerTitle"
+        android:id="@+id/PlantPlannertitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Plant Planner"
         android:textColor="#143822"
-        android:textSize="24sp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/view4"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBox"
+        app:layout_constraintVertical_bias="0.025" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="8dp"
-        android:id="@+id/recyclerview"
-
-
-
-        tools:ignore="MissingConstraints" />
-
+        android:id="@+id/searchPlants"
+        android:layout_width="365dp"
+        android:layout_height="489dp"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
