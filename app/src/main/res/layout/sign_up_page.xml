@@ -12,7 +12,9 @@
         android:layout_width="420dp"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
-        android:background="#84A98C" />
+        android:background="#84A98C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/bottomBox"
@@ -20,8 +22,8 @@
         android:layout_height="110dp"
         android:layout_alignParentBottom="true"
         android:background="#84A98C"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="623dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/signUpTitle"
@@ -31,14 +33,18 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:font-family="Montserrat, sans-serif"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="6dp"
+
+        android:fontFamily="sans-serif"
         android:text="Plant Planner"
         android:textAlignment="center"
         android:textColor="#143822"
         android:textSize="50sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="70dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBox" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -62,28 +68,33 @@
         android:layout_height="71dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        app:srcCompat="@drawable/leaf"
-        tools:layout_editor_absoluteX="334dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leaf" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="114dp"
-        android:layout_height="118dp"
+        android:layout_width="112dp"
+        android:layout_height="108dp"
         android:layout_alignParentBottom="true"
-        app:srcCompat="@drawable/leaf"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="623dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/leaf" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="280dp"
         android:layout_height="370dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="18dp"
         android:orientation="vertical"
         app:cardCornerRadius="25dp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="241dp">
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,7 +108,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:font-family="Montserrat, sans-serif"
+
+                android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:text="SIGN UP"
                 android:textSize="50px" />
@@ -112,11 +124,13 @@
                 android:drawableLeft="@drawable/baseline_account_circle_24"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:font-family="Montserrat, sans-serif"
+
+                android:fontFamily="sans-serif"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:padding="2dp"
                 android:textColorHint="#5A5A5A"
+                tools:ignore="TouchTargetSizeCheck"
                 tools:layout_editor_absoluteX="100dp"
                 tools:layout_editor_absoluteY="307dp" />
 
@@ -135,6 +149,7 @@
                 android:inputType="textPassword"
                 android:padding="2dp"
                 android:textColorHint="#5A5A5A"
+                tools:ignore="TouchTargetSizeCheck"
                 tools:layout_editor_absoluteX="100dp"
                 tools:layout_editor_absoluteY="365dp" />
 
@@ -145,15 +160,17 @@
                 android:layout_gravity="center"
                 android:layout_margin="8dp"
                 android:backgroundTint="#143822"
-                android:text="Sign Up" />
+                android:text="Sign Up"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/or"
                 android:layout_width="200dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center"
+
+                android:fontFamily="sans-serif"
                 android:gravity="center"
-                android:font-family="Montserrat, sans-serif"
                 android:text="──────  OR  ──────"
                 android:textSize="45px" />
 
@@ -165,14 +182,16 @@
                 android:layout_margin="8dp"
                 android:backgroundTint="#143822"
                 android:drawableLeft="@drawable/baseline_g_mobiledata_24"
-                android:text="Sign up with Google" />
+                android:text="Sign up with Google"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/logInInstead"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:font-family="Montserrat, sans-serif"
+
+                android:fontFamily="sans-serif"
                 android:text="Already have an account? " />
 
             <Button
@@ -182,7 +201,8 @@
                 android:layout_gravity="center"
                 android:layout_margin="8dp"
                 android:backgroundTint="#143822"
-                android:text="Log in" />
+                android:text="Log in"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
