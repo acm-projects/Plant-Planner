@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FEFAE0" >
+    <TextView
+        android:id="@+id/topBox"
+        android:layout_width="420dp"
+        android:layout_height="70dp"
+        android:background="@drawable/greenBox"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <TextView
+        android:id="@+id/bottomBox"
+        android:layout_width="420dp"
+        android:layout_height="110dp"
+        android:background="@drawable/greenBox"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="622dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        app:srcCompat="@drawable/leaf"
+        android:layout_width="81dp"
+        android:layout_height="71dp"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="115dp"
+        android:layout_height="105dp"
+        app:srcCompat="@drawable/leaf"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="627dp" />
+
+    <TextView
+        android:id="@+id/PlantPlannertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:font-family="Montserrat, sans-serif"
+        android:gravity="center"
+        android:text="Plant Planner"
+        android:textColor="#143822"
+        android:textSize="75px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBox"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <ImageView
+        android:id="@+id/book"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <TextView
+        android:id="@+id/plantName"
+        android:layout_height="wrap_content"
+        android:font-family="Montserrat, sans-serif"
+        android:gravity="center"
+        android:text="Plant Name"
+        android:textColor="#143822"
+        android:textSize="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBox" />
+
+    <TextView
+        android:id="@+id/plantNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:font-family="Montserrat, sans-serif"
+        android:gravity="center"
+        android:text="Plant Nickname"
+        android:textColor="#143822"
+        android:textSize="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <TextView
+        android:id="@+id/plantWateringSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:font-family="Montserrat, sans-serif"
+        android:gravity="center"
+        android:text="Watering Schedule"
+        android:textColor="#143822"
+        android:textSize="50px"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#84A98C"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D90429"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.766" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
