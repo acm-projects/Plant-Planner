@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     android:background="#FEFAE0">
 
+    <TextView
+        android:id="@+id/brownline4"
+        android:layout_width="370dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/brownline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plantSearch" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchPlantsRV"
+        android:layout_width="370dp"
+        android:layout_height="488dp"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brownline4" />
+
     <View
         android:id="@+id/topBox"
         android:layout_width="420dp"
@@ -41,6 +60,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="398dp"
         android:layout_height="102dp"
         android:gravity="center_horizontal|center_vertical"
@@ -114,7 +134,7 @@
         android:gravity="center"
         android:text="Plant Planner"
         android:textColor="#143822"
-        android:textSize="25dp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,13 +142,17 @@
         app:layout_constraintTop_toTopOf="@+id/topBox"
         app:layout_constraintVertical_bias="0.025" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/searchPlants"
-        android:layout_width="365dp"
-        android:layout_height="489dp"
-        app:layout_constraintBottom_toTopOf="@+id/view3"
+    <SearchView
+        android:id="@+id/plantSearch"
+        android:layout_width="321dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search for Plants Here!"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBox" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

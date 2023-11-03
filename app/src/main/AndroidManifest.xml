@@ -29,6 +29,7 @@
             tools:ignore="Instantiatable" />
         <activity
             android:name=".SearchPageActivity"
+            android:windowSoftInputMode="adjustNothing"
             android:exported="false" />
         <activity
             android:name=".UserPageActivity"
