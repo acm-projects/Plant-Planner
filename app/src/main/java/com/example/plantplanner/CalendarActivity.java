@@ -96,12 +96,7 @@ public class CalendarActivity extends AppCompatActivity {
             }
         });
 
-        /*
-        public void changeDateColor(Date date, int color){
 
-        }
-
-         */
     }
 }
 
