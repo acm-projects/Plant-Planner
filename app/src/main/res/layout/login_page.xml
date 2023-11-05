@@ -4,36 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FEFAE0"
-    tools:context=".SecondActivity" >
+    android:background="#FEFAE0">
 
-    <TextView
+    <View
         android:id="@+id/topBox"
         android:layout_width="420dp"
         android:layout_height="70dp"
-<<<<<<< HEAD
-        android:layout_alignParentTop="true"
-        android:background="#84A98C" />
-=======
-        android:background="@drawable/greenbox"
+        android:background="#84A98C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
->>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
+    <View
         android:id="@+id/bottomBox"
         android:layout_width="420dp"
         android:layout_height="110dp"
-<<<<<<< HEAD
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="616dp"
         android:background="#84A98C"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="623dp" />
-=======
-        android:background="@drawable/greenbox"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
->>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -47,7 +43,6 @@
         android:id="@+id/welcomeTitle"
         android:layout_width="400dp"
         android:layout_height="70dp"
-
         android:fontFamily="sans-serif"
         android:text="Plant Planner"
         android:textAlignment="center"

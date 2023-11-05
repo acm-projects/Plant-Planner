@@ -1,12 +1,18 @@
 package com.example.plantplanner;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.android.volley.BuildConfig;
+import com.android.volley.RequestQueue;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.BuildConfig;
@@ -14,19 +20,23 @@ import com.android.volley.RequestQueue;
 
 public class SearchPageActivity extends AppCompatActivity {
 
+
+    private RecyclerView recyclerView;
     private ImageButton userBtn;
     private ImageButton calendarBtn;
     private ImageButton curPlantsBtn;
     private ImageButton helpBtn;
 
-    private static final String PERENUAL_API_KEY = "sk-k9GS6539ce97aae8e2713";
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_plant_page);
 
-
+        recyclerView = findViewById(R.id.searchPlants);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 
 

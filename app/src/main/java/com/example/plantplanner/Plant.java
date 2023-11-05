@@ -1,15 +1,18 @@
 package com.example.plantplanner;
 
-public class plant {
+public class Plant {
     private String common_name;
     private String scientific_name;
     private int plant_image;
+    private int id;
+
 
     // Constructor
-    public plant(String common_name, String sci_name, int plant_image) {
+    public Plant(String common_name, String sci_name, int plant_image, int id) {
         this.common_name = common_name;
         this.scientific_name = sci_name;
         this.plant_image = plant_image;
+        this.id = id;
     }
 
     // Getter and Setter
@@ -33,5 +36,13 @@ public class plant {
 
     public void setPlant_image(int image) {
         this.plant_image = image;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

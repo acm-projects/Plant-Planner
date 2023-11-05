@@ -142,6 +142,7 @@
         android:layout_height="wrap_content"
         android:text="Plants to water today: "
         tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="512dp" />
+        tools:layout_editor_absoluteY="512dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

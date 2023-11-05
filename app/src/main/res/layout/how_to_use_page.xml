@@ -11,36 +11,25 @@
         android:layout_width="420dp"
         android:layout_height="70dp"
         android:background="@drawable/greenbox"
-<<<<<<< HEAD
         tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="-1dp" />
-=======
+        tools:layout_editor_absoluteY="-1dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
->>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
 
     <TextView
         android:id="@+id/bottomBox"
         android:layout_width="420dp"
         android:layout_height="110dp"
         android:background="@drawable/greenbox"
-<<<<<<< HEAD
         tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="624dp" />
-=======
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
->>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
+        tools:layout_editor_absoluteY="624dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/PlantPlannertitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-=======
-
         android:fontFamily="sans-serif"
->>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
         android:gravity="center"
         android:text="Plant Planner"
         android:textColor="#143822"
@@ -57,21 +46,16 @@
         android:id="@+id/imageView3"
         android:layout_width="81dp"
         android:layout_height="71dp"
-<<<<<<< HEAD
         tools:layout_editor_absoluteX="334dp"
         tools:layout_editor_absoluteY="-2dp"
-        tools:ignore="MissingConstraints" />
-=======
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/leaf" />
->>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
 
     <TextView
         android:id="@+id/howToUseTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="How To Use Plant Planner!"
