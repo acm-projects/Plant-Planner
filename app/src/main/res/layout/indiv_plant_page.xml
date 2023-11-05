@@ -11,26 +11,19 @@
         android:layout_width="420dp"
         android:layout_height="70dp"
         android:background="@drawable/greenbox"
-<<<<<<< HEAD
         tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="-2dp" />
-=======
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
->>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
+        tools:layout_editor_absoluteY="-2dp"
+        tools:ignore="MissingConstraints" />
+
 
     <TextView
         android:id="@+id/bottomBox"
         android:layout_width="420dp"
         android:layout_height="110dp"
         android:background="@drawable/greenbox"
-<<<<<<< HEAD
         tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="622dp" />
-=======
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
->>>>>>> 091cf13a0a56d6cbbd2652f1be143acf3656fa9a
+        tools:layout_editor_absoluteY="622dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -82,7 +75,6 @@
     <TextView
         android:id="@+id/plantName"
         android:layout_height="wrap_content"
-
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Plant Name"
@@ -93,13 +85,12 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/topBox"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.468"  android:layout_width="match_parent"/>
 
     <TextView
         android:id="@+id/plantNickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Plant Nickname"
@@ -116,7 +107,6 @@
         android:id="@+id/plantWateringSchedule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Watering Schedule"
