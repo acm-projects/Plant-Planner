@@ -95,6 +95,7 @@ public class CalendarActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
             }
         });
+
         /*
         public void changeDateColor(Date date, int color){
 

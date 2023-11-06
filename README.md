@@ -236,14 +236,15 @@
 
 <div align="center">
 <h1>Team Plant Planner 🪴</h1>
-<h2>🌿Project Manager🌿</h2>
-<h3>Clara Conner</h3><br/>
 
 <h2>🌿Developers🌿</h2>
 <h3>Aidan Loran</h3><br/>
 <h3>Micah Warner</h3><br/>
 <h3>Sarah Jacob</h3><br/>
 <h3>Uma Uppuloori</h3><br/>
+
+<h2>🌿Project Manager🌿</h2>
+<h3>Clara Conner</h3><br/>
 
 <h2>🌿Industry Mentor🌿</h2>
 <h3>Linh Ly</h3><br/><br/>
