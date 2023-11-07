@@ -1,6 +1,7 @@
 package com.example.plantplanner;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,6 +78,15 @@ public class customAdapter extends RecyclerView.Adapter<customAdapter.ViewHolder
             plantIV = itemView.findViewById(R.id.idPlantImage);
             plantCommonNameTV = itemView.findViewById(R.id.idPlantCommonName);
             plantScientificNameTV = itemView.findViewById(R.id.idPlantSciName);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    itemView.getContext().startActivity(new Intent(itemView.getContext(), IndivPlantActivity.class));
+                }
+            });
         }
+
+
     }
 }

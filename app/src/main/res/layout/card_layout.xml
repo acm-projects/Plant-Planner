@@ -60,5 +60,6 @@
             android:layout_toEndOf="@id/idPlantImage"
             android:drawablePadding="2dp"
             android:text="plant scientific name" />
+
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

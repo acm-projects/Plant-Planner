@@ -47,7 +47,8 @@ public class SignUpPageActivity extends AppCompatActivity implements GoogleApiCl
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SignUpPageActivity.this, UserPageActivity.class);
+                //Intent intent = new Intent(SignUpPageActivity.this, UserPageActivity.class);
+                Intent intent = new Intent(SignUpPageActivity.this, CurrentPlantsActivity.class);
                 startActivity(intent);
             }
         });
