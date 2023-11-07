@@ -49,6 +49,7 @@ public class SignUpPageActivity extends AppCompatActivity implements GoogleApiCl
             public void onClick(View view) {
                 Intent intent = new Intent(SignUpPageActivity.this, UserPageActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
