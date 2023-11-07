@@ -14,6 +14,8 @@ public class customAdapter extends RecyclerView.Adapter<customAdapter.ViewHolder
     private final Context context;
     private ArrayList<Plant> plantsList;
 
+    public boolean clickable = false;
+
     // Constructor
     public customAdapter(Context context, ArrayList<Plant> plantArrayList) {
         this.context = context;
@@ -27,9 +29,18 @@ public class customAdapter extends RecyclerView.Adapter<customAdapter.ViewHolder
 
     @Override
     public int getItemViewType(int position) {
-        if (plantsList.size() == 0 && context instanceof SearchPageActivity) return 0;//empty filtered list for search page
-        else if(plantsList.size() == 0) return 1; //empty plant list in current plants
-        else return 2; //has plants
+        if (plantsList.size() == 0 && context instanceof SearchPageActivity){//empty filtered list for search page
+            clickable = false;
+            return 0;
+        }
+        else if(plantsList.size() == 0){//empty plant list in current plants
+            clickable = false;
+            return 1;
+        }
+        else {
+            clickable = true;
+            return 2; //has plants
+        }
     }
 
 
@@ -39,13 +50,13 @@ public class customAdapter extends RecyclerView.Adapter<customAdapter.ViewHolder
         // to inflate the layout for each item of recycler view.
         if (viewType == 0) {//no found plants for search
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.plants_not_found_layout, parent, false);
-            return new ViewHolder(view);
+            return new ViewHolder(view, 0);
         } else if(viewType == 1){//no plants found in current plants
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.no_current_plants, parent, false);
-            return new ViewHolder(view);
+            return new ViewHolder(view, 1);
         } else {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_layout, parent, false);
-            return new ViewHolder(view);
+            return new ViewHolder(view, 2);
         }
     }
 
@@ -73,18 +84,20 @@ public class customAdapter extends RecyclerView.Adapter<customAdapter.ViewHolder
         private final TextView plantCommonNameTV;
         private final TextView plantScientificNameTV;
 
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView, int viewType) {
             super(itemView);
             plantIV = itemView.findViewById(R.id.idPlantImage);
             plantCommonNameTV = itemView.findViewById(R.id.idPlantCommonName);
             plantScientificNameTV = itemView.findViewById(R.id.idPlantSciName);
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    itemView.getContext().startActivity(new Intent(itemView.getContext(), IndivPlantActivity.class));
-                }
-            });
+            if(viewType == 2){
+                itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        itemView.getContext().startActivity(new Intent(itemView.getContext(), IndivPlantActivity.class));
+                    }
+                });
+            }
         }
 
 
