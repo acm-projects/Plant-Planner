@@ -152,8 +152,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/currentPlantsRV"
-        android:layout_width="365dp"
-        android:layout_height="489dp"
+        android:layout_width="370dp"
+        android:layout_height="488dp"
         app:layout_constraintBottom_toTopOf="@+id/view3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

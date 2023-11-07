@@ -32,7 +32,7 @@ public class CurrentPlantsActivity extends AppCompatActivity {
         plantsList.add(new Plant("rose", "scientific name here", 123, 2));
         plantsList.add(new Plant("European Silver Fir", "Abies alba", 123, 3));
         plantsList.add(new Plant("cactus", "pokey thing", 123, 4));
-        plantsList.add(new Plant("palm tree", "scientific palm tree", 123, 5));
+        plantsList.add(new Plant("palm tree", "palm tree but sciency", 123, 5));
         plantsList.add(new Plant("does this scroll", "pls work", 123, 6));
         //create adapter
         customAdapter adapter = new customAdapter(this, plantsList);
