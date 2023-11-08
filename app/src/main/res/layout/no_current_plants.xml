@@ -19,47 +19,42 @@
         will add padding in API v21+ as well to have the same measurements with previous versions -->
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="375dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal">
 
         <!-- ImageVIew to display our Course Image -->
-        <ImageView
-            android:id="@+id/idPlantImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:contentDescription="plant_name"
-            android:padding="5dp"
-            app:srcCompat="@drawable/planticon" />
 
         <!-- Text View to display Course Name -->
+
+        <!-- Text VIew to display Course Rating -->
+        <!-- Image used in present in drawable folder -->
+
         <TextView
-            android:id="@+id/idPlantCommonName"
+            android:id="@+id/noPlants"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="false"
             android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/idPlantImage"
-            android:text="plant common name"
+            android:text="You Don't Have Any Plants!"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <!-- Text VIew to display Course Rating -->
-        <!-- Image used in present in drawable folder -->
         <TextView
-            android:id="@+id/idPlantSciName"
+            android:id="@+id/face"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/idPlantCommonName"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_toEndOf="@id/idPlantImage"
+            android:layout_below="@id/noPlants"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="9dp"
             android:drawablePadding="2dp"
-            android:text="plant scientific name" />
-
+            android:text="0___ 0"
+            android:textAlignment="center"
+            android:textStyle="bold" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

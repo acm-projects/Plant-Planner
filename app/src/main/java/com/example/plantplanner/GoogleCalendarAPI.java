@@ -13,7 +13,7 @@ public class GoogleCalendarAPI {
     }
 
     //model of data from calendar(title, date, description, frequency???)
-    public class GetEventModel() {
+    public class GetEventModel {
         private int id = 0;
         private String summary = "";
         private String startDate = "";
@@ -41,6 +41,9 @@ public class GoogleCalendarAPI {
         public void setDescription(String description) { this.description = description; }
 
         // Equals and HashCode (Override as needed)
+
+        // ADDING MULTILINE COMMENTS TO PREVENT COMPILATION ERRORS AND RUN EMULATOR (TO BE DELETED)
+        /*
         @Override
         public boolean equals(Object obj) {
             if (this == obj) return true;
@@ -56,9 +59,9 @@ public class GoogleCalendarAPI {
         public int hashCode() {
             return Objects.hash(id, summary, startDate, description);
         }
+*/
 
         // ToString (Override as needed)
-
         @Override
         public String toString() {
             return "GetEventModel{" +
@@ -70,6 +73,7 @@ public class GoogleCalendarAPI {
         }
     }
 
+    /*
     //To access goggle account
     private var mCredential: GoogleAccountCredential? = null
 
@@ -164,6 +168,6 @@ public class GoogleCalendarAPI {
         onPostExecute(result) // runs in Main Thread
         onCancelled()
     }
-
+*/
 
 }
