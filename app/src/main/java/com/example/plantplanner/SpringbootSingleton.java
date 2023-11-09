@@ -20,6 +20,8 @@ import com.android.volley.toolbox.Volley;
         string url so like "http://LeeVanCleef.com", new Response.Listener<JSONObject>() {},
         new Response.ErrorListener() {});
 
+'http://10.122.178.180:8080/api/getPlantList/listid'
+Request.method.GET, url, new Response.Listener<JSONObject>(
     //Add your request to RequestQueue
     SpringbootSingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
 
