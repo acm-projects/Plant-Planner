@@ -3,6 +3,8 @@ package com.example.plantplanner;
 public class Plant {
     private String common_name;
     private String scientific_name;
+
+    private String waterFrequency;
     private int plant_image;
     private int id;
 
@@ -13,6 +15,15 @@ public class Plant {
         this.scientific_name = sci_name;
         this.plant_image = plant_image;
         this.id = id;
+        this.waterFrequency = "none";
+    }
+
+    public Plant(String common_name, String sci_name, int plant_image, int id, String waterFrequency) {
+        this.common_name = common_name;
+        this.scientific_name = sci_name;
+        this.plant_image = plant_image;
+        this.id = id;
+        this.waterFrequency = waterFrequency;
     }
 
     // Getter and Setter
@@ -27,6 +38,10 @@ public class Plant {
     public String getScientific_name(){
         return scientific_name;
     }
+
+    public String getWaterFrequency(){ return waterFrequency; }
+
+    public void setWaterFrequency(String water){ this.waterFrequency = water; }
     public void setScientific_name(String name){
         this.scientific_name = name;
     }
