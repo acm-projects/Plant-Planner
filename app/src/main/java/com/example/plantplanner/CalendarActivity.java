@@ -14,11 +14,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.json.JSONException;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 public class CalendarActivity extends AppCompatActivity {
 
@@ -42,12 +54,39 @@ public class CalendarActivity extends AppCompatActivity {
 
     int iterationsAhead = 4;//how many waters to create events for
 
+    //  10.169.178.32
+    String url = "http://10.169.178.32:8080/api/getUserByUsernameEmail/aidan/asloran23@gmail.com";
 
+    String listID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_schedule);
 
+        plantsToWater = (TextView)findViewById(R.id.waterTodayTextMsg);
+
+        RequestQueue queue = SpringbootSingleton.getInstance(this.getApplicationContext()).getRequestQueue();
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    Log.d("BEFORE LISTID ", "ovjodfvfovmv ksdvsdkvmc ");
+                    listID = response.getString("listid");
+                    Log.d("ID: ----- ", listID);
+                } catch (JSONException e) {
+                    Log.d("OJNFNJOSD error", "on response error");
+                    throw new RuntimeException(e);
+                }
+            }
+            }, new Response.ErrorListener(){
+
+                @Override
+                public void onErrorResponse(VolleyError error){
+                    plantsToWater.setText(error.toString());
+                }
+            });
+
+        SpringbootSingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
 
         // Calendar Functions //
 
@@ -57,8 +96,6 @@ public class CalendarActivity extends AppCompatActivity {
         calendar = Calendar.getInstance();
 
         calendar.setFirstDayOfWeek(1); //sets first day of week to sunday
-
-        plantsToWater = (TextView)findViewById(R.id.waterTodayTextMsg);
 
         //get recycler view
         recyclerV = findViewById(R.id.idrecycle);
