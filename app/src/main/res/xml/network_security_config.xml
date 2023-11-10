@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   network security config file referenced in AndroidManifest.xml
+   this is where we would acknowledge and point to the ssl certificate for the springboot api.
+   Right now, it serves to enable http traffic to our springboot api, as I'm having issues
+   getting android studio to recognize the self-signed certificate.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.122.178.180</domain>
+    </domain-config>
+</network-security-config>
