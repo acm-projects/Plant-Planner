@@ -35,6 +35,7 @@ android {
 
 dependencies {
 
+    //noinspection GradleCompatible
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("com.squareup.picasso:picasso:2.8")
@@ -45,7 +46,10 @@ dependencies {
     implementation("com.google.android.gms:play-services-auth:20.7.0")
     implementation("com.android.volley:volley:1.2.1")
     implementation("com.github.bumptech.glide:glide:4.16.0")
-    implementation("com.android.volley:volley:1.2.1")
+    //noinspection GradleCompatible
+    //implementation("com.android.support:recyclerview-v7:26.0.0")
+    //noinspection GradleCompatible
+    //implementation("com.android.support:cardview-v7:28.0.0")
 
 
     //for google auth and calendar integrations
@@ -57,10 +61,13 @@ dependencies {
     implementation("com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava")
 
     implementation("com.google.api-client:google-api-client-android:1.23.0") {
-        exclude(group = "org.apache.httpcomponents")
+        exclude(group = "org.apache.http-components")
     }
 
     //so that we can easily control permissions
     implementation("pub.devrel:easypermissions:3.0.0")
+
+    // used to implement perenual api
+    //implementation("com.mashape.unirest:unirest-android:1.0+")
 
 }

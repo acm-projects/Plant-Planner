@@ -3,12 +3,12 @@ package com.example.plantplanner;
 public class Plant {
     private String common_name;
     private String scientific_name;
-    private int plant_image;
+    private String plant_image;
     private int id;
 
 
     // Constructor
-    public Plant(String common_name, String sci_name, int plant_image, int id) {
+    public Plant(String common_name, String sci_name, String plant_image, int id) {
         this.common_name = common_name;
         this.scientific_name = sci_name;
         this.plant_image = plant_image;
@@ -30,11 +30,11 @@ public class Plant {
     public void setScientific_name(String name){
         this.scientific_name = name;
     }
-    public int getPlant_image() {
+    public String getPlant_image() {
         return plant_image;
     }
 
-    public void setPlant_image(int image) {
+    public void setPlant_image(String image) {
         this.plant_image = image;
     }
 

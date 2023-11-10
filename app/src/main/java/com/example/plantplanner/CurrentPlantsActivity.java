@@ -26,22 +26,6 @@ public class CurrentPlantsActivity extends AppCompatActivity {
         setContentView(R.layout.current_plants_page);
         //get recycler view
         RecyclerView plantsRV = findViewById(R.id.currentPlantsRV);
-        //new array list
-        ArrayList<Plant> plantsList = new ArrayList<Plant>();
-        plantsList.add(new Plant("sunflower", "whatever scientific sunflower name is", 123, 1));
-        plantsList.add(new Plant("rose", "scientific name here", 123, 2));
-        plantsList.add(new Plant("European Silver Fir", "Abies alba", 123, 3));
-        plantsList.add(new Plant("cactus", "pokey thing", 123, 4));
-        plantsList.add(new Plant("palm tree", "palm tree but sciency", 123, 5));
-        plantsList.add(new Plant("does this scroll", "pls work", 123, 6));
-        //create adapter
-        customAdapter adapter = new customAdapter(this, plantsList);
-        //create vertical list with linear layout manager
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        //set layout manager and adapter to the recycler view
-        plantsRV.setLayoutManager(linearLayoutManager);
-        plantsRV.setAdapter(adapter);
-
 
 
 
