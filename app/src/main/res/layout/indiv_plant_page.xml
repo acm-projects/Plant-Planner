@@ -88,12 +88,12 @@
         app:layout_constraintVertical_bias="0.468"  android:layout_width="match_parent"/>
 
     <TextView
-        android:id="@+id/plantNickname"
+        android:id="@+id/plantSciName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="Plant Nickname"
+        android:text="Plant Scientific Name"
         android:textColor="#143822"
         android:textSize="50px"
         app:layout_constraintBottom_toBottomOf="parent"

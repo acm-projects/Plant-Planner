@@ -124,7 +124,6 @@
                 android:drawableLeft="@drawable/baseline_account_circle_24"
                 android:drawablePadding="10dp"
                 android:ems="10"
-
                 android:fontFamily="sans-serif"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
@@ -168,7 +167,6 @@
                 android:layout_width="200dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center"
-
                 android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:text="──────  OR  ──────"
@@ -190,7 +188,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-
                 android:fontFamily="sans-serif"
                 android:text="Already have an account? " />
 
