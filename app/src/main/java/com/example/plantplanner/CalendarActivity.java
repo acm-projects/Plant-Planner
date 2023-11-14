@@ -55,7 +55,7 @@ public class CalendarActivity extends AppCompatActivity {
     int iterationsAhead = 4;//how many waters to create events for
 
     //  10.169.178.32
-    String url = "http://10.169.178.32:8080/api/getUserByUsernameEmail/aidan/asloran23@gmail.com";
+    String url = "http://10.173.176.110:8080/api/getUserByUsernameEmail/aidan/asloran23@gmail.com";
 
     String listID;
     @Override
@@ -81,11 +81,12 @@ public class CalendarActivity extends AppCompatActivity {
             }, new Response.ErrorListener(){
 
                 @Override
-                public void onErrorResponse(VolleyError error){
-                    plantsToWater.setText(error.toString());
+                public void onErrorResponse(VolleyError error) {
+                    Log.d("hello","error");
                 }
             });
 
+        //pixel 3a 34 api
         SpringbootSingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
 
         // Calendar Functions //
