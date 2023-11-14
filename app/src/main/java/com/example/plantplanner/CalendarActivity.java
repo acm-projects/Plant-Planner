@@ -53,8 +53,6 @@ public class CalendarActivity extends AppCompatActivity {
     final String msgYesPlants = "Plants to Water Today:";
 
     int iterationsAhead = 4;//how many waters to create events for
-
-    //  10.169.178.32
     String url = "http://10.173.176.110:8080/api/getUserByUsernameEmail/aidan/asloran23@gmail.com";
 
     String listID;
