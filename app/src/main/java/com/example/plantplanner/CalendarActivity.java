@@ -88,6 +88,36 @@ public class CalendarActivity extends AppCompatActivity {
 
         SpringbootSingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
 
+        String[] plantsList = new String[8];
+        String[] datesLastWatered = new String[8];
+        String[] waterTimePeriod = new String[8];
+        JsonObjectRequest jsonObjectRequest2 = new JsonObjectRequest(url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    JSONArray n = response.getJSONArray("plantlist");
+                    JSONArray wd = response.getJSONArray("lastWaterDates");
+                    JSONArray wp = response.getJSONArray("plantperiods");
+                    for(int i = 0; i < 8; i++){
+                        plantsList[i] = n.getString(i);
+                        datesLastWatered[i] = wd.getString(i);
+                        waterTimePeriod[i] = wp.getString(i);
+
+                    }
+                } catch (JSONException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }, new Response.ErrorListener(){
+
+            @Override
+            public void onErrorResponse(VolleyError error){
+                plantsToWater.setText(error.toString());
+            }
+        });
+
+        SpringbootSingleton.getInstance(this).addToRequestQueue(jsonObjectRequest2);
+
         // Calendar Functions //
 
         setContentView(R.layout.user_schedule);
@@ -107,13 +137,7 @@ public class CalendarActivity extends AppCompatActivity {
         recyclerV.setLayoutManager(linearLayoutManager);
         recyclerV.setAdapter(adapter);
         //new array
-        Plant[] plantsList = new Plant[8];
-        plantsList[0] = new Plant("sunflower", "whatever scientific sunflower name is", 123, 1, "5-7");
-        plantsList[1] = new Plant("rose", "scientific name here", 123, 2, "3-4");
-        plantsList[2] = new Plant("European Silver Fir", "Abies alba", 123, 3, "7");
-        plantsList[3] = new Plant("cactus", "pokey thing", 123, 4, "7-10");
-        plantsList[4] = new Plant("palm tree", "palm tree but sciency", 123, 5, "3-5");
-        plantsList[5] = new Plant("does this scroll", "pls work", 123, 6, "8");
+
 
         //date of last water
         String[] dateLastWatered = new String[8];//in YYYY-MM-DD format
@@ -135,8 +159,8 @@ public class CalendarActivity extends AppCompatActivity {
                 int m = Integer.parseInt(dateLastWatered[i].substring(5, 7));
                 int d = Integer.parseInt(dateLastWatered[i].substring(8));
                 for(int n = 0; n < iterationsAhead; n++){
-                    Event e = new Event(plantsList[i]);
-                    int freq = getWaterFrequencyInt(plantsList[i]);
+                    Event e = new Event(plantsList[i], y, m, d);
+                    int freq = getWaterFrequencyInt(waterTimePeriod[i]);
                     e.setDate(y, m, d+(n*freq));
                     Log.d("PLEASE", e.getDate());
                     pls.add(e);
@@ -265,6 +289,19 @@ public class CalendarActivity extends AppCompatActivity {
 
     public int getWaterFrequencyInt(Plant p){//return water frequency for plant p in days
         String w = p.getWaterFrequency();
+        int intFreq = 0;
+        if(w.contains("-")){//water frequency is a range ex: 5-7
+            int indexDash = w.indexOf("-");
+            int bottom = Integer.parseInt(w.substring(0, indexDash));
+            int top = Integer.parseInt(w.substring(indexDash+1));
+            intFreq = (int)(bottom+top)/2;//average of the end points
+        }  else {//single number
+            intFreq = Integer.parseInt(w);
+        }
+        return intFreq;
+    }
+
+    public int getWaterFrequencyInt(String w){//return water frequency for plant p in days
         int intFreq = 0;
         if(w.contains("-")){//water frequency is a range ex: 5-7
             int indexDash = w.indexOf("-");
