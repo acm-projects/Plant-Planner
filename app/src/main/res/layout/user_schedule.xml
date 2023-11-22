@@ -127,22 +127,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxDate="12/31/2024"
-        android:minDate="11/29/2023"
+        android:minDate="11/01/2023"
         android:theme="@style/CalenderViewCustom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34" />
+        app:layout_constraintVertical_bias="0.18" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idrecycle"
+        android:layout_width="362dp"
+        android:layout_height="175dp"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/date"
+        android:id="@+id/waterTodayTextMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Plants to water today: "
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="512dp"
-        tools:ignore="MissingConstraints" />
+        android:fontFamily="sans-serif"
+        android:text="Plants to Water Today:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idrecycle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
