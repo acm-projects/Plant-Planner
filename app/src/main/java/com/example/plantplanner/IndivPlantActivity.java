@@ -20,7 +20,7 @@ import com.squareup.picasso.Picasso;
 
 public class IndivPlantActivity extends AppCompatActivity {
 
-    Button add, delete;
+    private Button add, delete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
