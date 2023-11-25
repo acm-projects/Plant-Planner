@@ -60,7 +60,7 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onComplete(Task<Void> task) {
                 finish();
-                startActivity(new Intent(SecondActivity.this, MainActivity.class));
+                startActivity(new Intent(SecondActivity.this, SignUpPageActivity.class));
             }
         });
     }

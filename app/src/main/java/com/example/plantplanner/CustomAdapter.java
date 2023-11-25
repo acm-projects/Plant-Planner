@@ -14,13 +14,12 @@ import java.util.List;
 import com.squareup.picasso.Picasso;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.SearchViewHolder> {
-    private Context mContext;
-    private ArrayList<Plant> plantList;
-    private static OnItemClickListener mListener;
+    private final RecyclerViewInterface recyclerViewInterface;
 
-    public interface OnItemClickListener {
-        void onItemClick(int position);
-    }
+    private Context mContext;
+    private ArrayList<Plant> plantList = new ArrayList<>();
+    //private static OnItemClickListener mListener;
+
 
     public void setFilteredList(ArrayList<Plant> filteredList)
     {
@@ -28,20 +27,18 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.SearchView
         notifyDataSetChanged();
     }
 
-    public void setOnItemClickListener(OnItemClickListener listener) {
-        mListener = listener;
-    }
 
-    public CustomAdapter(Context context, ArrayList<Plant> arrayList) {
+    public CustomAdapter(Context context, ArrayList<Plant> arrayList, RecyclerViewInterface recyclerViewInterface) {
         mContext = context;
         plantList = arrayList;
+        this.recyclerViewInterface = recyclerViewInterface;
     }
 
     @NonNull
     @Override
     public CustomAdapter.SearchViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_layout, parent, false);
-        return new SearchViewHolder(v);
+        return new SearchViewHolder(v, recyclerViewInterface);
     }
 
     @Override
@@ -54,22 +51,28 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.SearchView
 
         holder.plantCommonName.setText(name);
         holder.plantSciName.setText(sciName);
-        Picasso.get().load(imageUrl).fit().centerInside().into(holder.plantImage);
+        if (imageUrl != "")
+        {
+            Picasso.get().load(imageUrl).fit().centerInside().into(holder.plantImage);
+        }
     }
 
     @Override
     public int getItemCount() {
+        if (plantList == null)
+        {
+            return 0;
+        }
         return plantList.size();
     }
 
 
     public static class SearchViewHolder extends RecyclerView.ViewHolder {
-
         private final ImageView plantImage;
         private final TextView plantCommonName;
         private final TextView plantSciName;
 
-        public SearchViewHolder(@NonNull View itemView) {
+        public SearchViewHolder(@NonNull View itemView, RecyclerViewInterface recyclerViewInterface) {
             super(itemView);
             plantImage = (ImageView) itemView.findViewById(R.id.idPlantImage);
             plantCommonName = (TextView) itemView.findViewById(R.id.idPlantCommonName);
@@ -78,10 +81,12 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.SearchView
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (mListener != null) {
+                    if (recyclerViewInterface != null)
+                    {
                         int position = getAdapterPosition();
-                        if (position != RecyclerView.NO_POSITION) {
-                            mListener.onItemClick(position);
+                        if (position != RecyclerView.NO_POSITION)
+                        {
+                            recyclerViewInterface.onItemClick(position);
                         }
                     }
                 }
