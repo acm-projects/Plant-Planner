@@ -1,12 +1,12 @@
 package com.example.plantplanner;
 
-import static com.example.plantplanner.SearchPageActivity.EXTRA_NAME;
-import static com.example.plantplanner.SearchPageActivity.EXTRA_SCI_NAME;
-import static com.example.plantplanner.SearchPageActivity.EXTRA_URL;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
+
+import static com.example.plantplanner.SearchPageActivity.EXTRA_NAME;
+import static com.example.plantplanner.SearchPageActivity.EXTRA_SCI_NAME;
+import static com.example.plantplanner.SearchPageActivity.EXTRA_URL;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,7 +20,7 @@ import com.squareup.picasso.Picasso;
 
 public class IndivPlantActivity extends AppCompatActivity {
 
-    Button add, delete;
+    private Button add, delete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,6 @@ public class IndivPlantActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.book);
         TextView textViewName = findViewById(R.id.plantName);
         TextView textViewSciName = findViewById(R.id.plantSciName);
-
         Picasso.get().load(imageUrl).fit().centerInside().into(imageView);
         textViewName.setText(plantComName);
         textViewSciName.setText(plantSciName);

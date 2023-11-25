@@ -71,12 +71,12 @@ public class CalendarActivity extends AppCompatActivity {
         recyclerV.setAdapter(adapter);
         //new array
         Plant[] plantsList = new Plant[8];
-        plantsList[0] = new Plant("sunflower", "whatever scientific sunflower name is", 123, 1, "5-7");
-        plantsList[1] = new Plant("rose", "scientific name here", 123, 2, "3-4");
-        plantsList[2] = new Plant("European Silver Fir", "Abies alba", 123, 3, "7");
-        plantsList[3] = new Plant("cactus", "pokey thing", 123, 4, "7-10");
-        plantsList[4] = new Plant("palm tree", "palm tree but sciency", 123, 5, "3-5");
-        plantsList[5] = new Plant("does this scroll", "pls work", 123, 6, "8");
+        plantsList[0] = new Plant("sunflower", "whatever scientific sunflower name is", "https://i.etsystatic.com/8218820/r/il/01ac40/1577281449/il_570xN.1577281449_6522.jpg", 1, "5-7");
+        plantsList[1] = new Plant("rose", "scientific name here", "https://i.etsystatic.com/8218820/r/il/01ac40/1577281449/il_570xN.1577281449_6522.jpg", 2, "3-4");
+        plantsList[2] = new Plant("European Silver Fir", "Abies alba", "https://i.etsystatic.com/8218820/r/il/01ac40/1577281449/il_570xN.1577281449_6522.jpg", 3, "7");
+        plantsList[3] = new Plant("cactus", "pokey thing", "https://i.etsystatic.com/8218820/r/il/01ac40/1577281449/il_570xN.1577281449_6522.jpg", 4, "7-10");
+        plantsList[4] = new Plant("palm tree", "palm tree but sciency", "https://i.etsystatic.com/8218820/r/il/01ac40/1577281449/il_570xN.1577281449_6522.jpg", 5, "3-5");
+        plantsList[5] = new Plant("does this scroll", "pls work", "https://i.etsystatic.com/8218820/r/il/01ac40/1577281449/il_570xN.1577281449_6522.jpg", 6, "8");
 
         //date of last water
         String[] dateLastWatered = new String[8];//in YYYY-MM-DD format

@@ -29,13 +29,13 @@
         android:id="@+id/topBox"
         android:layout_width="420dp"
         android:layout_height="70dp"
-        android:background="#84A98C"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:background="#84A98C"
+        tools:ignore="VisualLintBounds" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -57,7 +57,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="VisualLintBounds" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"

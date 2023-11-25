@@ -5,7 +5,6 @@ public class Plant {
     private String scientific_name;
     private String plant_image;
     private String waterFrequency;
-    private int plant_image;
     private int id;
 
 
@@ -18,7 +17,7 @@ public class Plant {
         this.waterFrequency = "none";
     }
 
-    public Plant(String common_name, String sci_name, int plant_image, int id, String waterFrequency) {
+    public Plant(String common_name, String sci_name, String plant_image, int id, String waterFrequency) {
         this.common_name = common_name;
         this.scientific_name = sci_name;
         this.plant_image = plant_image;
