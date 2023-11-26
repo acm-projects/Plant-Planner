@@ -8,23 +8,23 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="210dp"
-        android:layout_height="46dp"
+        android:layout_width="208dp"
+        android:layout_height="30dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:text="Number of Plants"
+        android:layout_marginTop="32dp"
+        android:text="Number of Plants: 3"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/profileIcon"
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <TextView
         android:id="@+id/email"
-        android:layout_width="164dp"
-        android:layout_height="21dp"
+        android:layout_width="224dp"
+        android:layout_height="23dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="44dp"
         android:text="Email"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/profileIcon"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
@@ -33,7 +33,7 @@
         android:layout_width="167dp"
         android:layout_height="24dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:text="Name"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/profileIcon"

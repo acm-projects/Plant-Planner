@@ -49,6 +49,9 @@ public class UserPageActivity extends AppCompatActivity implements GoogleApiClie
         email = findViewById(R.id.email);
         signOutBtn = findViewById(R.id.sign_outBtn);
 
+        name.setText("Micah Warner");
+        email.setText("micahawarner04@gmail.com");
+
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         googleApiClient = new GoogleApiClient.Builder(this).enableAutoManage(this, this).addApi(Auth.GOOGLE_SIGN_IN_API , gso).build();
 
@@ -141,7 +144,7 @@ public class UserPageActivity extends AppCompatActivity implements GoogleApiClie
         }
         else
         {
-            goToSignUpPage();
+            //goToSignUpPage();
         }
     }
 

@@ -11,8 +11,9 @@
         android:layout_width="420dp"
         android:layout_height="70dp"
         android:background="@drawable/greenbox"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="-2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
 
@@ -21,8 +22,9 @@
         android:layout_width="420dp"
         android:layout_height="110dp"
         android:background="@drawable/greenbox"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="622dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -37,6 +39,7 @@
         android:id="@+id/imageView5"
         android:layout_width="115dp"
         android:layout_height="105dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/bottomBox"
         app:srcCompat="@drawable/leaf" />
@@ -69,80 +72,96 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18" />
+        app:layout_constraintTop_toBottomOf="@+id/topBox"
+        app:layout_constraintVertical_bias="0.088" />
 
     <TextView
         android:id="@+id/plantName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="Plant Name"
+        android:text="Lily of the Nile"
         android:textColor="#143822"
         android:textSize="50px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/topBox"
-        app:layout_constraintVertical_bias="0.468"  android:layout_width="match_parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/book"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/plantSciName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="Plant Scientific Name"
+        android:text="Agapanthus Blue Yonder"
         android:textColor="#143822"
         android:textSize="50px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintTop_toBottomOf="@+id/plantName"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/plantWateringSchedule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="Watering Schedule"
+        android:text="Water Every: 6 - 8 Days"
         android:textColor="#143822"
         android:textSize="50px"
         app:layout_constraintBottom_toBottomOf="@+id/bottomBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintTop_toBottomOf="@+id/plantSciName"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/addButton"
         android:layout_width="110dp"
         android:layout_height="50dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="#84A98C"
         android:text="Add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.767" />
+        app:layout_constraintTop_toBottomOf="@+id/plantWateringSchedule"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/deleteButton"
         android:layout_width="110dp"
         android:layout_height="50dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="#D90429"
         android:text="Delete"
         app:layout_constraintBottom_toBottomOf="@+id/bottomBox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plantWateringSchedule"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="49dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/_0577"
+        app:layout_constraintStart_toStartOf="@+id/topBox"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.766" />
+        app:srcCompat="@null" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

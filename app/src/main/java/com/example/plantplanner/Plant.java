@@ -17,6 +17,14 @@ public class Plant {
         this.waterFrequency = "none";
     }
 
+    public Plant(String common_name, String sci_name, int id) {
+        this.common_name = common_name;
+        this.scientific_name = sci_name;
+        this.plant_image = "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/regular/49255769768_df55596553_b.jpg";
+        this.id = id;
+        this.waterFrequency = "none";
+    }
+
     public Plant(String common_name, String sci_name, String plant_image, int id, String waterFrequency) {
         this.common_name = common_name;
         this.scientific_name = sci_name;

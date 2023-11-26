@@ -73,7 +73,10 @@ public class SignUpPageActivity extends AppCompatActivity implements GoogleApiCl
                 finish();
             }
             else {
-                Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(SignUpPageActivity.this, UserPageActivity.class));
+                finish();
             }
         }
     }

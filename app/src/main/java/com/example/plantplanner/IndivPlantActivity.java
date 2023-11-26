@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,6 +22,8 @@ import com.squareup.picasso.Picasso;
 public class IndivPlantActivity extends AppCompatActivity {
 
     Button add, delete;
+
+    private ImageButton backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,9 +43,10 @@ public class IndivPlantActivity extends AppCompatActivity {
         TextView textViewName = findViewById(R.id.plantName);
         TextView textViewSciName = findViewById(R.id.plantSciName);
 
+        imageUrl = "https:\\/\\/perenual.com\\/storage\\/species_image\\/578_agapanthus_rfdd_double_diamond\\/regular\\/51685545730_a49c37d107_b.jpg";
         Picasso.get().load(imageUrl).fit().centerInside().into(imageView);
-        textViewName.setText(plantComName);
-        textViewSciName.setText(plantSciName);
+        //textViewName.setText(plantComName);
+        //textViewSciName.setText(plantSciName);
 
 
         add.setOnClickListener(new View.OnClickListener(){
@@ -56,6 +60,17 @@ public class IndivPlantActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(IndivPlantActivity.this, "Deleted plant", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // Navigates to Search Plants Page
+        backButton = (ImageButton)findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(IndivPlantActivity.this, SearchPageActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
